@@ -34,6 +34,7 @@
     font-size: 200%;
     color: #cc0808;
     text-align: center;
+    margin-top: 5%;
  }
 
  p {
@@ -85,10 +86,6 @@
 
  /* style intro-area div */
 
- #intro-area > h2 {
-    margin-top: 5%; 
-}
-
 #intro-area > p {
     margin-top: 5px;
     margin-bottom: 5px;
@@ -101,15 +98,11 @@
 
  /* style quiz-area div */
 
- #quiz-area > h2 {
-    margin-top: 5%;
- }
-
- #quiz-area > p {
+ .quiz-area > p {
     margin-top: 5px;
  }
 
- #quiz-are > ul {
+ .quiz-area > ul {
     margin-left: 40%;
     margin-top: 10px;
  }
@@ -117,6 +110,7 @@
  .quiz-controls {
     text-align: center;
     margin-top: 10px;
+    margin-bottom: 10px;
  }
 
 .score-area {
@@ -130,9 +124,8 @@
  }
 
  .quit {
-    text-align: right;
-    margin-right: 20px;
-    bottom: 0;
+    text-align: center;
+    margin-top: 10px;
  }
  /* style buttons */
 
