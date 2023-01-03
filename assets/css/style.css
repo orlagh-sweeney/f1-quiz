@@ -82,3 +82,16 @@
     left: 50%;
     transform: translate(-50%, -50%);
  }
+
+ button {
+    background-color: #252525;
+    color: #a9fa27;
+    height: 30px;
+    width: 120px;
+    border-radius: 4px;
+    text-transform: uppercase;
+ }
+
+ button:hover {
+    background-color: #cc0808;
+ }
