@@ -86,6 +86,10 @@
 
  /* style intro-area div */
 
+ #intro-area {
+    display: none;
+ }
+
 #intro-area > p {
     margin-top: 5px;
     margin-bottom: 5px;
@@ -98,9 +102,11 @@
 
  /* style quiz-area div */
 
+ /* Temporary commented out
  #quiz {
     display: none;
  }
+ */
 
  .quiz-area > p {
     margin-top: 5px;
