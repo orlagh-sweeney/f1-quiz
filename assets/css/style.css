@@ -83,6 +83,24 @@
     transform: translate(-50%, -50%);
  }
 
+ /* style intro area div */
+
+ #intro-area > h2 {
+    margin-top: 5%; 
+}
+
+#intro-area > p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+ .quiz-type {
+    text-align: center;
+    margin-top: 50px;
+ }
+
+ /* style buttons */
+
  button {
     background-color: #252525;
     color: #a9fa27;
