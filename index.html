@@ -11,11 +11,70 @@
     <title>Formula 1 Quiz</title>
 </head>
 <body>
-    <h1>Heading</h1>
-    <div>Introduction and Quiz Selection</div>
-    <div>Quiz Area</div>
-    <div>Results</div>
-    <footer>Social media links</footer>
+    <h1 id="heading">The Formaula 1 Quiz</h1>
+
+    <div id="intro-area" class="container">
+        <h2>How to play</h2>
+        <p>Instructions on how to play.</p>
+        <h2>Choose your quiz</h2>
+        <p>Description of each quiz</p>
+        <div class="quiz-type">
+            <button class="btn-quiz-1">2022 Wrapped</button>
+            <button class="btn-quiz-2">Driver Trivia</button>
+        </div>
+    </div>
+
+    <div id="quiz-area" class="container">
+        <h2 class="quiz-name">Quiz Name</h2>
+        <p class="question">Question</p>
+        <ul class="options">
+            <li class="option-1">Option 1</li>
+            <li class="option-2">Option 2</li>
+            <li class="option-3">Option 3</li>
+        </ul>
+
+        <button class="submit">Submit</button>
+        <button class="next">Next</button>
+
+        <div class="score-area">
+            <p class="scores">Score <span id="score">0</span></p>
+            <p class="scores">Time Penalties <span id="incorrect">0</span></p>
+            <p class="scores">Lap Time <span id="time">0</span></p>
+        </div>
+        
+        <button class="quit">Quit</button>
+    </div>
+
+    <div id="results-area" class="container">
+        <h2>The results are in!</h2>
+        <div class="score-area">
+            <p class="scores">Score <span id="score">0</span></p>
+            <p class="scores">Time Penalties <span id="incorrect">0</span></p>
+            <p class="scores">Lap Time <span id="time">0</span></p>
+        </div>
+
+        <h2>Ready to race again?</h2>
+        <div class="quiz-type">
+            <button class="btn-quiz-1">2022 Wrapped</button>
+            <button class="btn-quiz-2">Driver Trivia</button>
+        </div>
+        <button class="quit">Quit</button>
+    </div>
+
+    <footer>
+        <ul class="social-links">
+            <li>
+                <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Visit our Facebook page (opens in a new tab)"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Visit our Instagram page (opens in a new tab)"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+                <a href="https://www.twitter.com" target="_blank" rel="noopener" aria-label="Visit our Twitter page (opens in a new tab)"><i class="fa-brands fa-square-twitter"></i></a>
+            </li>
+        </ul>
+    </footer>
+    <script src="https://kit.fontawesome.com/f687081393.js" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
