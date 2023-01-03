@@ -1,27 +1,27 @@
-runQuiz {
+function runQuiz() {
 
 }
 
-checkAnswer {
+function checkAnswer() {
 
 }
 
-incrementScore {
+function incrementScore() {
 
 }
 
-incrementTimePenalty {
+function ncrementTimePenalty() {
 
 }
 
-incrementTimer {
+function incrementTimer() {
 
 }
 
-displayQuiz1 {
+function displayQuiz1() {
 
 }
 
-displayQuiz2 {
-    
+function displayQuiz2() {
+
 }
