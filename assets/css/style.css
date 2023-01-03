@@ -83,7 +83,7 @@
     transform: translate(-50%, -50%);
  }
 
- /* style intro area div */
+ /* style intro-area div */
 
  #intro-area > h2 {
     margin-top: 5%; 
@@ -99,6 +99,41 @@
     margin-top: 50px;
  }
 
+ /* style quiz-area div */
+
+ #quiz-area > h2 {
+    margin-top: 5%;
+ }
+
+ #quiz-area > p {
+    margin-top: 5px;
+ }
+
+ #quiz-are > ul {
+    margin-left: 40%;
+    margin-top: 10px;
+ }
+
+ .quiz-controls {
+    text-align: center;
+    margin-top: 10px;
+ }
+
+.score-area {
+    text-align: center;
+}
+
+ .scores {
+    display: inline-block;
+    margin-left: 5%;
+    margin-right: 5%;
+ }
+
+ .quit {
+    text-align: right;
+    margin-right: 20px;
+    bottom: 0;
+ }
  /* style buttons */
 
  button {
