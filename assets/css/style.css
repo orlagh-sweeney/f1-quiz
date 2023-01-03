@@ -93,10 +93,14 @@
 
  .quiz-type {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 20px;
  }
 
  /* style quiz-area div */
+
+ #quiz {
+    display: none;
+ }
 
  .quiz-area > p {
     margin-top: 5px;
@@ -127,6 +131,13 @@
     text-align: center;
     margin-top: 10px;
  }
+
+ /* style results area */
+
+ #results-area {
+    display: none;
+ }
+
  /* style buttons */
 
  button {
