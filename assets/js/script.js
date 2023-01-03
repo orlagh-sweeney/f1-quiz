@@ -8,9 +8,9 @@ const questionText = document.getElementsByClassName('question');
 const optionA = document.getElementById('optionA');
 const optionB = document.getElementById('optionB');
 const optionC = document.getElementById('optionC');
-const userScore = document.getElementById('score');
-const userWrong = document.getElementById('incorrect');
-const userTimer = document.getElementById('time');
+const userScore = document.getElementsByClass('score');
+const userWrong = document.getElementsByClass('incorrect');
+const userTimer = document.getElementsByClass('time');
 
 /**
  * Wait for DOM to finished loading before running the game
