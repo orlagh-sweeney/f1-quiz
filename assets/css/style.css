@@ -66,3 +66,14 @@
     color: #a9fa27;
  }
 
+ /* style main div containers */
+
+ .container {
+    background-color: rgba(169, 250, 39, 0.7);
+    width: 70vw;
+    height: 60vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+ }
