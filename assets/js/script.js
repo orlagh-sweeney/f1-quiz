@@ -66,12 +66,12 @@ function incrementTimer() {
 
 }
 
-function displayQuizA() {
+function displayQuizA(quizAQuestions) {
     
     document.getElementById('question').textContent = quizAQuestions.questionText;
     document.getElementById('optionA').textContent = quizAQuestions.optionA;
-    document.getElementById('optionB').textContent = optionB;
-    document.getElementById('optionC').textContent = optionC;
+    document.getElementById('optionB').textContent = quizAQuestions.optionB;
+    document.getElementById('optionC').textContent = quizAQuestions.optionC;
 
 }
 
@@ -149,5 +149,78 @@ let quizAQuestions = [
         optionB: "Fernando Alonso",
         optionC: "Kevin Magnussen",
         correctAnswer: "Lando Norris",
+    },
+];
+
+let quizBQuestions = [
+    {
+        questionText: "1. What Australian wine brand does Daniel Riccardo have a collaboration with?",
+        optionA: "St Hugo",
+        optionB: "19 Crimes",
+        optionC: "Mollydocker",
+        correctAnswer: "St Hugo",
+    },
+    {
+        questionText: "2. Which driver has the lowest golf handicap?",
+        optionA: "Lando Norris",
+        optionB: "Carlos Sainz",
+        optionC: "Alex Albon",
+        correctAnswer: "Carlos Sainz",
+    },
+    {
+        questionText: "3. Which driver owns a gin brand called Oath Gin?",
+        optionA: "Valterri Bottas",
+        optionB: "Nicholas Latifi",
+        optionC: "Sebastian Vettel",
+        correctAnswer: "Valterri Bottas",
+    },
+    {
+        questionText: "4. What is the name of Lewis Hamilton’s dog?",
+        optionA: "Roscoe",
+        optionB: "Boscoe",
+        optionC: "Joscoe",
+        correctAnswer: "Roscoe",
+    },
+    {
+        questionText: "5. Which driver has the most followers on Twitch?",
+        optionA: "Lando Norris",
+        optionB: "Charlec Leclerc",
+        optionC: "Alex Albon",
+        correctAnswer: "Lando Norris",
+    },
+    {
+        questionText: "6. Which driver is dating a player on the LPGA tour?",
+        optionA: "Sergio Perez",
+        optionB: "Lance Stroll",
+        optionC: "Alex Albon",
+        correctAnswer: "Alex Albon",
+    },
+    {
+        questionText: "7. Whose father was a World Rally Champion?",
+        optionA: "Max Verstappen",
+        optionB: "Carlos Sainz",
+        optionC: "Fernando Alonso",
+        correctAnswer: "Carlos Sainz",
+    },
+    {
+        questionText: "8. How many kids does Sergio Perez have?",
+        optionA: "0",
+        optionB: "2",
+        optionC: "3",
+        correctAnswer: "3",
+    },
+    {
+        questionText: "9. Which driver joined Instagram in 2022?",
+        optionA: "Sebastian Vettel",
+        optionB: "Lewis Hamilton",
+        optionC: "Mick Schumacher",
+        correctAnswer: "Sebastian Vettel",
+    },
+    {
+        questionText: "10. Who is the oldest driver on the grid?",
+        optionA: "Sebastian Vettel",
+        optionB: "Fernando Alonso",
+        optionC: "Lewis Hamilton",
+        correctAnswer: "Fernando Alonso",
     },
 ];
