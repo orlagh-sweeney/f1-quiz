@@ -24,11 +24,11 @@ document.addEventListener("DOMContentLoaded", function() {
     for (let button of buttons) {
         button.addEventListener("click", function() {
             if (this.getAttribute("data-type") === "submit") {
-                alert("You clicked submit!");
+                checkAnswer();
             } else if (this.getAttribute("data-type") === "next") {
-                alert("You clicked next!");
+                nextQuestion();
             } else if (this.getAttribute("data-type") === "quit") {
-                alert("You clicked quit!");
+                quitQuiz();
             } else {
                 let quizType = this.getAttribute("data-type");
                 runQuiz(quizType);
@@ -52,6 +52,14 @@ function runQuiz(quizType) {
 
 function checkAnswer() {
 
+}
+
+function nextQuestion () {
+
+}
+
+function quitQuiz () {
+    
 }
 
 function incrementScore() {
