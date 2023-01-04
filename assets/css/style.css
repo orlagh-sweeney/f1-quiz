@@ -113,6 +113,14 @@
     margin-top: 10px;
  }
 
+ li:hover {
+   color: #cc0808;
+ }
+
+ li:active {
+   color: #cc0808;
+ }
+
  .quiz-controls {
     text-align: center;
     margin-top: 10px;
