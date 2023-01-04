@@ -31,19 +31,22 @@ document.addEventListener("DOMContentLoaded", function() {
                 alert("You clicked quit!");
             } else {
                 let quizType = this.getAttribute("data-type");
-                alert(`You clicked ${quizType}`);
+                runQuiz(quizType);
             }
         })
     }
 })
 
-function runQuiz() {
+function runQuiz(quizType) {
 
-    if (document.getElementsByClassName("btn-quiz-1")) {
+    if (quizType === "2022 Wrapped") {
         displayQuizA();
-    } else if (document.getElementsByClassName("btn-quiz-2")) {
+    } else if (quizType === "Driver Trivia") {
         displayQuizB();
-    }
+    } else {
+        alert(`Unknow game type: $(quizType)`);
+        throw `Unknown game type: $(quizType). Aborting!`;
+    } 
 
 }
 
@@ -64,6 +67,12 @@ function incrementTimer() {
 }
 
 function displayQuizA() {
+    
+    document.getElementById('question').textContent = questions.questionText;
+    document.getElementById('optionA').textContent = optionA;
+    document.getElementById('optionB').textContent = optionB;
+    document.getElementById('optionC').textContent = optionC;
+
     
     let questions = [
         {
