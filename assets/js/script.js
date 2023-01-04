@@ -66,16 +66,32 @@ function incrementTimer() {
 
 }
 
-function displayQuizA(quizAQuestions) {
+/**
+ * Fucntions to display quesitons in the quiz based on quiz type.
+ * Code snippet taken from CodeExplainedRepo and modified
+ */
+
+let runningQuestion = 0;
+
+function displayQuizA() {
     
-    document.getElementById('question').textContent = quizAQuestions.questionText;
-    document.getElementById('optionA').textContent = quizAQuestions.optionA;
-    document.getElementById('optionB').textContent = quizAQuestions.optionB;
-    document.getElementById('optionC').textContent = quizAQuestions.optionC;
+    let q = quizAQuestions[runningQuestion];
+
+    questionText.textContent = q.questionText;
+    optionA.textContent = q.optionA;
+    optionB.textContent = q.optionB;
+    optionC.textContent = q.optionC;
 
 }
 
 function displayQuizB() {
+
+    let q = quizBQuestions[runningQuestion];
+
+    questionText.textContent = q.questionText;
+    optionA.textContent = q.optionA;
+    optionB.textContent = q.optionB;
+    optionC.textContent = q.optionC;
 
 }
 
