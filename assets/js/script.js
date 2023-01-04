@@ -1,4 +1,4 @@
-const runQuizA = document.getElementsByClassName('btn-quiz-1');
+/**const runQuizA = document.getElementsByClassName('btn-quiz-1');
 const runQuizB = document.getElementsByClassName('btn-quiz-2');
 const submitBtn = document.getElementsByClassName('submit');
 const nextBtn = document.getElementsByClassName('next');
@@ -11,6 +11,7 @@ const optionC = document.getElementById('optionC');
 const userScore = document.getElementsByClass('score');
 const userWrong = document.getElementsByClass('incorrect');
 const userTimer = document.getElementsByClass('time');
+*/
 
 /**
  * Wait for DOM to finished loading before running the game
@@ -20,13 +21,17 @@ const userTimer = document.getElementsByClass('time');
 document.addEventListener("DOMContentLoaded", function() {
     let buttons = document.getElementsByTagName("button");
 
-    for (let buttons of buttons) {
-        buttons.addEventListener("click", function() {
-            if (this.getElementsByClassName("btn-quiz-1")) {
-                runQuiz();
+    for (let button of buttons) {
+        button.addEventListener("click", function() {
+            if (this.getAttribute("data-type") === "submit") {
+                alert("You clicked submit!");
+            } else if (this.getAttribute("data-type") === "next") {
+                alert("You clicked next!");
+            } else if (this.getAttribute("data-type") === "quit") {
+                alert("You clicked quit!");
             } else {
-                this.getElementsByClassName("btn-quiz-2");
-                runQuiz();
+                let quizType = this.getAttribute("data-type");
+                alert(`You clicked ${quizType}`);
             }
         })
     }
