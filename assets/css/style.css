@@ -113,11 +113,11 @@
     margin-top: 10px;
  }
 
- li:hover {
-   color: #cc0808;
+ li {
+   padding-bottom: 10px;
  }
 
- li:active {
+ li:hover, li:active {
    color: #cc0808;
  }
 
