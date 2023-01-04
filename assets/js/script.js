@@ -11,6 +11,7 @@ const optionC = document.getElementById('optionC');
 const userScore = document.getElementsByClassName('score');
 const userWrong = document.getElementsByClassName('incorrect');
 const userTimer = document.getElementsByClassName('time');
+let activeQuiz = 'A';
 
 
 /**
@@ -37,11 +38,29 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 })
 
+
+optionA.addEventListener('click', function(){
+    userAnswer("A");
+    console.log(this);
+})
+
+optionB.addEventListener('click', function(){
+    userAnswer("B");
+    console.log(this);
+})
+
+optionC.addEventListener('click', function(){
+    userAnswer("C");
+    console.log(this);
+})
+
 function runQuiz(quizType) {
 
     if (quizType === "2022 Wrapped") {
+        activeQuiz = 'A';
         displayQuizA();
     } else if (quizType === "Driver Trivia") {
+        activeQuiz = 'B';
         displayQuizB();
     } else {
         alert(`Unknow game type: $(quizType)`);
@@ -50,16 +69,23 @@ function runQuiz(quizType) {
 
 }
 
+function userAnswer(answer) {
+
+    console.log(answer);
+}
+
 function checkAnswer() {
 
 }
 
 function nextQuestion() {
 
-    if(runningQuestion<quizAQuestions.length-1) {
+    if(activeQuiz == 'A' && runningQuestion<quizAQuestions.length-1) {
+        console.log("running quizA");
         runningQuestion++;
         displayQuizA();
-    } else if (runningQuestion<quizBQuestions.length-1) {
+    } else if (activeQuiz == 'B' && runningQuestion<quizBQuestions.length-1) {
+        console.log("running quizB");
         runningQuestion++;
         displayQuizB();
     }
