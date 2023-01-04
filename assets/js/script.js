@@ -54,8 +54,15 @@ function checkAnswer() {
 
 }
 
-function nextQuestion () {
+function nextQuestion() {
 
+    if(runningQuestion<quizAQuestions.length-1) {
+        runningQuestion++;
+        displayQuizA();
+    } else if (runningQuestion<quizBQuestions.length-1) {
+        runningQuestion++;
+        displayQuizB();
+    }
 }
 
 function quitQuiz () {
