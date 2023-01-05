@@ -95,12 +95,22 @@ function quitQuiz () {
     
 }
 
+/**
+ * Code taken from Code Institute Love Maths projects
+ * Takes current score from the DOM and increments it by 1
+ */
 function incrementScore() {
-
+    let oldScore = parseInt(document.getElementsByClassName("score").innerText);
+    document.getElementsByClassName("score").innerText = ++oldScore;
 }
 
+/**
+ * Code taken from Code Institute Love Maths projects
+ * Takes current score from the DOM and increments it by 1
+ */
 function incrementTimePenalty() {
-
+    let oldScore = parseInt(document.getElementsByClassName("incorrect").innerText);
+    document.getElementsByClassName("incorrect").innerText = ++oldScore;
 }
 
 function incrementTimer() {
