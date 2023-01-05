@@ -86,10 +86,30 @@ function checkAnswer() {
 
 function checkQuizAAnswers() {
 
+    let selectedAnswer = userAnswer();
+
+    if (selectedAnswer === quizAQuestions[runningQuestion].correctAnswer) {
+        console.log('correct');
+        incrementScore();
+    } else {
+        console.log('incorrect');
+        incrementTimePenalty();
+        }
+
 }
 
 function checkQuizBAnswers() {
-    
+
+    let selectedAnswer = userAnswer();
+
+    if (selectedAnswer === quizBQuestions[runningQuestion].correctAnswer) {
+        console.log('correct');
+        incrementScore();
+    } else {
+        console.log('incorrect');
+        incrementTimePenalty();
+        }
+
 }
 
 function nextQuestion() {
@@ -166,7 +186,7 @@ let quizAQuestions = [
         optionA: "Max Verstappen",
         optionB: "Lewis Hamilton",
         optionC: "Charles Leclerc",
-        correctAnswer: "A",
+        correctAnswer: "optionA",
     },
     {
         questionText: "Which team had the fastest pitstop in 2022?",
