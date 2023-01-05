@@ -188,6 +188,8 @@ function displayQuizA() {
     optionB.textContent = q.optionB;
     optionC.textContent = q.optionC;
 
+    window.isLastQuestion = q.isLastQuestion;
+
 }
 
 function displayQuizB() {
@@ -198,6 +200,8 @@ function displayQuizB() {
     optionA.textContent = q.optionA;
     optionB.textContent = q.optionB;
     optionC.textContent = q.optionC;
+
+    window.isLastQuestion = q.isLastQuestion;
 
 }
 
@@ -212,6 +216,7 @@ let quizAQuestions = [
         optionB: "Lewis Hamilton",
         optionC: "Charles Leclerc",
         correctAnswer: "A",
+        isLastQuestion: "No",
     },
     {
         questionText: "Which team had the fastest pitstop in 2022?",
@@ -219,6 +224,7 @@ let quizAQuestions = [
         optionB: "McLaren",
         optionC: "Ferrari",
         correctAnswer: "B",
+        isLastQuestion: "No",
     },
     {
         questionText: "What was the most DNFs by any one driver?",
@@ -226,6 +232,7 @@ let quizAQuestions = [
         optionB: "5",
         optionC: "6",
         correctAnswer: "C",
+        isLastQuestion: "No",
     },
     {
         questionText: "Which team won the 2022 Constructors Championship?",
@@ -233,6 +240,7 @@ let quizAQuestions = [
         optionB: "Redbull",
         optionC: "Ferrari",
         correctAnswer: "B",
+        isLastQuestion: "No",
     },
     {
         questionText: "Where was the final Grand Prix of 2022",
@@ -240,6 +248,7 @@ let quizAQuestions = [
         optionB: "Bahrain",
         optionC: "Brazil",
         correctAnswer: "B",
+        isLastQuestion: "No",
     },
     {
         questionText: "Who won the overall 2022 DHL Fastest Lap award?",
@@ -247,6 +256,7 @@ let quizAQuestions = [
         optionB: "Max Verstappen",
         optionC: "George Russell",
         correctAnswer: "B",
+        isLastQuestion: "No",
     },
     {
         questionText: "Who was the youngest f1 driver in 2022?",
@@ -254,6 +264,7 @@ let quizAQuestions = [
         optionB: "Lando Norris",
         optionC: "Fernando Alonso",
         correctAnswer: "A",
+        isLastQuestion: "No",
     },
     {
         questionText: "Which nationality was represented by the most drivers?",
@@ -261,6 +272,7 @@ let quizAQuestions = [
         optionB: "Spanish",
         optionC: "British",
         correctAnswer: "C",
+        isLastQuestion: "No",
     },
     {
         questionText: "How many World Champions were on the grid in 2022?",
@@ -268,6 +280,7 @@ let quizAQuestions = [
         optionB: "4",
         optionC: "6",
         correctAnswer: "B",
+        isLastQuestion: "No",
     },
     {
         questionText: "Outside of the 3 top teams (Redbull, Ferrari & Mercedes), who was the only other driver to reach the podium?",
@@ -275,6 +288,7 @@ let quizAQuestions = [
         optionB: "Fernando Alonso",
         optionC: "Kevin Magnussen",
         correctAnswer: "A",
+        isLastQuestion: "Yes",
     },
 ];
 
@@ -290,6 +304,7 @@ let quizBQuestions = [
         optionB: "19 Crimes",
         optionC: "Mollydocker",
         correctAnswer: "A",
+        isLastQuestion: "No",
     },
     {
         questionText: "Which driver has the lowest golf handicap?",
@@ -297,6 +312,7 @@ let quizBQuestions = [
         optionB: "Carlos Sainz",
         optionC: "Alex Albon",
         correctAnswer: "B",
+        isLastQuestion: "No",
     },
     {
         questionText: "Which driver owns a gin brand called Oath Gin?",
@@ -304,6 +320,7 @@ let quizBQuestions = [
         optionB: "Nicholas Latifi",
         optionC: "Sebastian Vettel",
         correctAnswer: "A",
+        isLastQuestion: "No",
     },
     {
         questionText: "What is the name of Lewis Hamiltons dog?",
@@ -311,6 +328,7 @@ let quizBQuestions = [
         optionB: "Boscoe",
         optionC: "Joscoe",
         correctAnswer: "A",
+        isLastQuestion: "No",
     },
     {
         questionText: "Which driver has the most followers on Twitch?",
@@ -318,6 +336,7 @@ let quizBQuestions = [
         optionB: "Charlec Leclerc",
         optionC: "Alex Albon",
         correctAnswer: "A",
+        isLastQuestion: "No",
     },
     {
         questionText: "Which driver is dating a player on the LPGA tour?",
@@ -325,6 +344,7 @@ let quizBQuestions = [
         optionB: "Lance Stroll",
         optionC: "Alex Albon",
         correctAnswer: "C",
+        isLastQuestion: "No",
     },
     {
         questionText: "Whose father was a World Rally Champion?",
@@ -332,6 +352,7 @@ let quizBQuestions = [
         optionB: "Carlos Sainz",
         optionC: "Fernando Alonso",
         correctAnswer: "B",
+        isLastQuestion: "No",
     },
     {
         questionText: "How many kids does Sergio Perez have?",
@@ -339,6 +360,7 @@ let quizBQuestions = [
         optionB: "2",
         optionC: "3",
         correctAnswer: "C",
+        isLastQuestion: "No",
     },
     {
         questionText: "Which driver joined Instagram in 2022?",
@@ -346,6 +368,7 @@ let quizBQuestions = [
         optionB: "Lewis Hamilton",
         optionC: "Mick Schumacher",
         correctAnswer: "A",
+        isLastQuestion: "No",
     },
     {
         questionText: "Who is the oldest driver on the grid?",
@@ -353,5 +376,6 @@ let quizBQuestions = [
         optionB: "Fernando Alonso",
         optionC: "Lewis Hamilton",
         correctAnswer: "B",
+        isLastQuestion: "Yes",
     },
 ];
