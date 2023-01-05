@@ -18,7 +18,6 @@ let activeQuiz = 'A';
  * Wait for DOM to finished loading before running the game
  * Get the button elements and add event listeners
  */
-
 document.addEventListener("DOMContentLoaded", function() {
     let buttons = document.getElementsByTagName("button");
 
@@ -38,7 +37,10 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 })
 
-
+/**
+ * Event listeners for the answer options to be
+ * used in the userAnswer function
+ */
 optionA.addEventListener('click', function(){
     userAnswer("A");
     console.log(this);
@@ -54,6 +56,10 @@ optionC.addEventListener('click', function(){
     console.log(this);
 })
 
+/**
+ * This the main quiz function which runs when the user
+ * selects which quiz they would like to play
+ */
 function runQuiz(quizType) {
 
     if (quizType === "2022 Wrapped") {
@@ -72,8 +78,14 @@ function runQuiz(quizType) {
 function userAnswer(answer) {
 
     console.log(answer);
+
 }
 
+/**
+ * This function runs when the user clicks the submit button
+ * It then calls the correct function to check answers 
+ * based on the quiz being played
+ */
 function checkAnswer() {
 
     if (activeQuiz == 'A') {
@@ -84,6 +96,9 @@ function checkAnswer() {
 
 }
 
+/**
+ * This function checks Quiz A answers
+ */
 function checkQuizAAnswers() {
 
     let selectedAnswer = userAnswer();
@@ -98,6 +113,9 @@ function checkQuizAAnswers() {
 
 }
 
+/**
+ * This function checks Quiz B answers
+ */
 function checkQuizBAnswers() {
 
     let selectedAnswer = userAnswer();
@@ -112,6 +130,10 @@ function checkQuizBAnswers() {
 
 }
 
+/**
+ * This function runs when the next button is clicked 
+ * allowing the user to see the next question
+ */
 function nextQuestion() {
 
     if(activeQuiz == 'A' && runningQuestion<quizAQuestions.length-1) {
@@ -123,6 +145,11 @@ function nextQuestion() {
         runningQuestion++;
         displayQuizB();
     }
+
+/**
+ * This function allows the user to quit the quiz 
+ * and return to the inital quiz page
+ */
 }
 
 function quitQuiz () {
@@ -152,10 +179,9 @@ function incrementTimer() {
 }
 
 /**
- * Fucntions to display quesitons in the quiz based on quiz type.
+ * These functions to display quesitons in the quiz based on quiz type.
  * Code snippet taken from CodeExplainedRepo and modified
  */
-
 let runningQuestion = 0;
 
 function displayQuizA() {
@@ -180,6 +206,10 @@ function displayQuizB() {
 
 }
 
+/**
+ * Questions and answers for quiz A: 2022 Wrapped
+ * 
+ */
 let quizAQuestions = [
     {
         questionText: "Who was crowned the Formula 1 2022 World Champion?",
@@ -252,6 +282,11 @@ let quizAQuestions = [
         correctAnswer: "Lando Norris",
     },
 ];
+
+/**
+ * Questions and answers for quiz B: Driver Trivia
+ * 
+ */
 
 let quizBQuestions = [
     {
