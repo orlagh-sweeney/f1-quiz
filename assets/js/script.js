@@ -42,18 +42,15 @@ document.addEventListener("DOMContentLoaded", function() {
  * used in the userAnswer function
  */
 optionA.addEventListener('click', function(){
-    userAnswer("A");
-    console.log(this);
+    window.selectedAnswer="A";
 })
 
 optionB.addEventListener('click', function(){
-    userAnswer("B");
-    console.log(this);
+    window.selectedAnswer="B";
 })
 
 optionC.addEventListener('click', function(){
-    userAnswer("C");
-    console.log(this);
+    window.selectedAnswer="C";
 })
 
 /**
@@ -101,9 +98,7 @@ function checkAnswer() {
  */
 function checkQuizAAnswers() {
 
-    let selectedAnswer = userAnswer();
-
-    if (selectedAnswer === quizAQuestions[runningQuestion].correctAnswer) {
+    if (window.selectedAnswer === quizAQuestions[runningQuestion].correctAnswer) {
         console.log('correct');
         incrementScore();
     } else {
@@ -118,9 +113,7 @@ function checkQuizAAnswers() {
  */
 function checkQuizBAnswers() {
 
-    let selectedAnswer = userAnswer();
-
-    if (selectedAnswer === quizBQuestions[runningQuestion].correctAnswer) {
+    if (window.selectedAnswer === quizBQuestions[runningQuestion].correctAnswer) {
         console.log('correct');
         incrementScore();
     } else {
