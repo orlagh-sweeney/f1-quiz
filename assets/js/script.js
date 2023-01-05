@@ -76,6 +76,20 @@ function userAnswer(answer) {
 
 function checkAnswer() {
 
+    if (activeQuiz == 'A') {
+        checkQuizAAnswers();
+    } else {
+        checkQuizBAnswers();
+    }
+
+}
+
+function checkQuizAAnswers() {
+
+}
+
+function checkQuizBAnswers() {
+    
 }
 
 function nextQuestion() {
@@ -152,14 +166,14 @@ let quizAQuestions = [
         optionA: "Max Verstappen",
         optionB: "Lewis Hamilton",
         optionC: "Charles Leclerc",
-        correctAnswer: "Max Verstappen",
+        correctAnswer: "A",
     },
     {
         questionText: "Which team had the fastest pitstop in 2022?",
         optionA: "Redbull",
         optionB: "McLaren",
         optionC: "Ferrari",
-        correctAnswer: "McLaren",
+        correctAnswer: "B",
     },
     {
         questionText: "What was the most DNFs by any one driver?",
