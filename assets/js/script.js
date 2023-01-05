@@ -154,8 +154,10 @@ function quitQuiz () {
  * Takes current score from the DOM and increments it by 1
  */
 function incrementScore() {
-    let oldScore = parseInt(document.getElementsByClassName("score").innerText);
-    document.getElementsByClassName("score").innerText = ++oldScore;
+    
+    let oldScore = parseInt(document.getElementById("score").innerText);
+    document.getElementById("score").innerText = ++oldScore;
+
 }
 
 /**
@@ -163,8 +165,8 @@ function incrementScore() {
  * Takes current score from the DOM and increments it by 1
  */
 function incrementTimePenalty() {
-    let oldScore = parseInt(document.getElementsByClassName("incorrect").innerText);
-    document.getElementsByClassName("incorrect").innerText = ++oldScore;
+    let oldScore = parseInt(document.getElementById("incorrect").innerText);
+    document.getElementById("incorrect").innerText = ++oldScore;
 }
 
 function incrementTimer() {
