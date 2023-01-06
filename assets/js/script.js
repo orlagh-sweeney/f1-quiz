@@ -191,6 +191,7 @@ function quitQuiz () {
     document.getElementById('intro-area').style.display = "block"; 
     document.getElementById('quiz').style.display = "none"; 
     document.getElementById('results-area').style.display = "none";
+    location.reload();
 
 }
 
