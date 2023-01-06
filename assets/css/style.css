@@ -108,9 +108,9 @@
     margin-top: 5px;
  }
 
- .quiz-area > ul {
-    margin-left: 40%;
-    margin-top: 10px;
+ .options {
+   margin-left: 40%;
+   margin-top: 10px;
  }
 
  li {
@@ -206,16 +206,9 @@ li {
    text-align: center;
 }
 
-button {
-   display: block;
-   margin: 0 auto;
-   margin-top: 5px;
-}
-
 .scores {
-   display: block;
-   margin: 0 auto;
    margin-top: 5px;
+   padding: 0;
 }
 
  }
@@ -232,6 +225,18 @@ button {
 p {
    padding-right: 10%;
    padding-left: 10%;
+}
+
+.scores {
+   display: block;
+   margin: 0 auto;
+   margin-bottom: 4px;
+}
+
+button {
+   display: block;
+   margin: 0 auto;
+   margin-top: 5px;
 }
 
  }
