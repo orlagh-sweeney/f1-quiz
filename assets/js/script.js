@@ -70,11 +70,13 @@ function runQuiz(quizType) {
         displayQuizA();
         document.getElementById('quiz').style.display = "block"; 
         document.getElementById('intro-area').style.display = "none"; 
+        document.getElementById('results-area').style.display = "none";
     } else if (quizType === "Driver Trivia") {
         activeQuiz = 'B';
         displayQuizB();
         document.getElementById('quiz').style.display = "block"; 
         document.getElementById('intro-area').style.display = "none"; 
+        document.getElementById('results-area').style.display = "none";
     } else {
         alert(`Unknow game type: $(quizType)`);
         throw `Unknown game type: $(quizType). Aborting!`;
@@ -186,6 +188,10 @@ function nextQuestion() {
  */
 function quitQuiz () {
     
+    document.getElementById('intro-area').style.display = "block"; 
+    document.getElementById('quiz').style.display = "none"; 
+    document.getElementById('results-area').style.display = "none";
+
 }
 
 /**

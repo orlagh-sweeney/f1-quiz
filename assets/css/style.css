@@ -39,6 +39,7 @@
 
  p {
     text-align: center;
+    font-size: 120%;
  }
 
  /* style footer and social media icons */
@@ -98,7 +99,6 @@
 
  /* style quiz-area div */
 
-
  #quiz {
     display: none;
  }
@@ -114,6 +114,7 @@
 
  li {
    padding-bottom: 10px;
+   font-size: 120%;
  }
 
  li:hover {
@@ -130,8 +131,9 @@
     margin-bottom: 10px;
  }
 
-.score-area {
+#quiz > .score-area {
     text-align: center;
+    margin-top: 30px;
 }
 
  .scores {
@@ -140,9 +142,9 @@
     margin-right: 5%;
  }
 
- .quit {
+ #quiz > .quit {
     text-align: center;
-    margin-top: 10px;
+    margin-top: 20px;
  }
 
 
@@ -151,6 +153,16 @@
  #results-area {
     display: none;
  }
+
+ #results-area > .score-area {
+   text-align: center;
+   margin-top: 30px;
+}
+
+ #results-area > .quit {
+   text-align: center;
+   margin-top: 40px;
+}
  
 
  /* style buttons */
