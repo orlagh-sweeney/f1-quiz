@@ -78,11 +78,10 @@
     background-color: rgba(169, 250, 39, 0.7);
     width: 70vw;
     height: 60vh;
-    /* Temporarily commented out for testing
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%)*/
+    transform: translate(-50%, -50%)
  }
 
  /* style intro-area div */
@@ -99,10 +98,10 @@
 
  /* style quiz-area div */
 
- /* temporarily commented out for testing
+
  #quiz {
     display: none;
- */
+ }
 
  .quiz-area > p {
     margin-top: 5px;
