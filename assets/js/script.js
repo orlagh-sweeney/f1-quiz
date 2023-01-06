@@ -8,9 +8,9 @@ const questionText = document.getElementById('question');
 const optionA = document.getElementById('optionA');
 const optionB = document.getElementById('optionB');
 const optionC = document.getElementById('optionC');
-const userScore = document.getElementsByClassName('score');
-const userWrong = document.getElementsByClassName('incorrect');
-const userTimer = document.getElementsByClassName('time');
+const userScore = document.getElementById('score');
+const userWrong = document.getElementById('incorrect');
+const userTimer = document.getElementById('time');
 let activeQuiz = 'A';
 
 
@@ -179,6 +179,10 @@ function nextQuestion() {
         removeClickClass();
     } else if (window.isLastQuestion === "Yes") {
         finalScore();
+        runningQuestion = 0;
+        userScore.innerText = "0";
+        userWrong.innerText = "0";
+        userTmer.innerText = "0";
     }
 }
 
