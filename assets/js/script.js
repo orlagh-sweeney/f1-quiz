@@ -86,12 +86,18 @@ function runQuiz(quizType) {
 
 }
 
+/**
+ * This function logs the user answer to the console 
+ */
 function userAnswer(answer) {
-
     console.log(answer);
 
 }
 
+/**
+ * This function adds the click class to the opption/answer selected
+ * by the user which changes the text color to red
+ */
 function clickClass() {
 
     if (window.selectedAnswer === "A") {
@@ -110,6 +116,10 @@ function clickClass() {
 
 }
 
+/**
+ * This function removes the click class when a different option is selected by the user
+ * The text colour is returned to grey
+ */
 function removeClickClass () {
 
     document.getElementById('optionA').classList.remove('click-class');
@@ -223,11 +233,21 @@ function incrementTimePenalty() {
     document.getElementById("incorrect").innerText = ++oldScore;
 }
 
+/**
+ * Variables for quiz timer
+ * Code taken from http.dev.to article written by Walter Nascimento
+ * Modified to suit this proeject
+ */
 let cron;
 let minutes = 0;
 let seconds = 0;
 let millisecond = 0;
 
+/**
+ * This function starts the timer when the quiz loads
+ * Code taken from http.dev.to article written by Walter Nascimento
+ * Modified to suit this proeject
+ */
 function startTimer() {
 
     console.log('timer function');
@@ -235,6 +255,11 @@ function startTimer() {
 
 }
 
+/**
+ * This function increments the time elapsed
+ * Code taken from http.dev.to article written by Walter Nascimento
+ * Modified to suit this proeject
+ */
 function incrementTimer() {
 
     if ((millisecond += 10) == 1000) {
@@ -249,11 +274,21 @@ function incrementTimer() {
     userTimerSeconds.innerText = returnData(seconds);
 }
 
+/**
+ * This function adds a zero in front of digits less than 10
+ * Code taken from http.dev.to article written by Walter Nascimento
+ * Modified to suit this proeject
+ */
 function returnData(input) {
 
     return input > 10 ? input : `0${input}`
 }
 
+/**
+ * This function resets the timer when the quiz ends
+ * Code taken from http.dev.to article written by Walter Nascimento
+ * Modified to suit this proeject
+ */
 function timerReset() {
     millisecond = 0;
     minutes = 0;
@@ -263,10 +298,19 @@ function timerReset() {
 
 }
 
+/**
+ * This function pauses the timer when the quiz ends
+ * Code taken from http.dev.to article written by Walter Nascimento
+ * Modified to suit this proeject
+ */
 function timerPause() {
     clearInterval(cron);
 }
 
+/**
+ * This function let the results-area div become visible on screen
+ * It also pushes the final scores to the results panel
+ */
 function finalScore() {
 
     document.getElementById('quiz').style.display = "none"; 
