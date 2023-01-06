@@ -225,6 +225,12 @@ function finalScore() {
     document.getElementById('intro-area').style.display = "none"; 
     document.getElementById('results-area').style.display = "block";  
 
+    let finalCorrect = (document.getElementById("score").innerText);
+    document.getElementById("final-score").innerText = finalCorrect;
+
+    let finalInCorrect = (document.getElementById("incorrect").innerText);
+    document.getElementById("final-incorrect").innerText = finalInCorrect;
+
 }
 
 /**
