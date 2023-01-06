@@ -78,7 +78,7 @@ function runQuiz(quizType) {
         document.getElementById('intro-area').style.display = "none"; 
         document.getElementById('results-area').style.display = "none";
     } else {
-        alert(`Unknow game type: $(quizType)`);
+        alert(`Unknown game type: $(quizType)`);
         throw `Unknown game type: $(quizType). Aborting!`;
     } 
 
@@ -177,7 +177,7 @@ function nextQuestion() {
         runningQuestion++;
         displayQuizB();
         removeClickClass();
-    } else if (window.isLastQuestion = "Yes") {
+    } else if (window.isLastQuestion === "Yes") {
         finalScore();
     }
 }
