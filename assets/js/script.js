@@ -184,8 +184,8 @@ function nextQuestion() {
         runningQuestion = 0;
         userScore.innerText = "0";
         userWrong.innerText = "0";
-        userTimerMinutes.innerText = "00";
-        userTimerSeconds.innerText = "00";
+        timerReset();
+        timerPause();
     }
 }
 
@@ -250,7 +250,21 @@ function incrementTimer() {
 }
 
 function returnData(input) {
+
     return input > 10 ? input : `0${input}`
+}
+
+function timerReset() {
+    millisecond = 0;
+    minutes = 0;
+    seconds = 0;
+    userTimerMinutes.innerText = "00";
+    userTimerSeconds.innerText = "00";
+
+}
+
+function timerPause() {
+    clearInterval(cron);
 }
 
 function finalScore() {
