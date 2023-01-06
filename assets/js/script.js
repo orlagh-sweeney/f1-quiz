@@ -10,7 +10,8 @@ const optionB = document.getElementById('optionB');
 const optionC = document.getElementById('optionC');
 const userScore = document.getElementById('score');
 const userWrong = document.getElementById('incorrect');
-const userTimer = document.getElementById('time');
+const userTimerMinutes = document.getElementById('minutes');
+const userTimerSeconds = document.getElementById('seconds');
 let activeQuiz = 'A';
 
 
@@ -32,6 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
             } else {
                 let quizType = this.getAttribute("data-type");
                 runQuiz(quizType);
+                startTimer();
             }
         });
     }
@@ -182,7 +184,8 @@ function nextQuestion() {
         runningQuestion = 0;
         userScore.innerText = "0";
         userWrong.innerText = "0";
-        userTmer.innerText = "0";
+        userTimerMinutes.innerText = "00";
+        userTimerSeconds.innerText = "00";
     }
 }
 
@@ -220,8 +223,34 @@ function incrementTimePenalty() {
     document.getElementById("incorrect").innerText = ++oldScore;
 }
 
+let cron;
+let minutes = 0;
+let seconds = 0;
+let millisecond = 0;
+
+function startTimer() {
+
+    console.log('timer function');
+    cron = setInterval(() => { incrementTimer(); }, 10);
+
+}
+
 function incrementTimer() {
 
+    if ((millisecond += 10) == 1000) {
+        millisecond = 0;
+        seconds++;
+    } 
+    if (seconds == 60) {
+        seconds = 0;
+        minutes++;
+    }
+    userTimerMinutes.innerText = returnData(minutes);
+    userTimerSeconds.innerText = returnData(seconds);
+}
+
+function returnData(input) {
+    return input > 10 ? input : `0${input}`
 }
 
 function finalScore() {
@@ -235,6 +264,12 @@ function finalScore() {
 
     let finalInCorrect = (document.getElementById("incorrect").innerText);
     document.getElementById("final-incorrect").innerText = finalInCorrect;
+
+    let finalTimeMinutes = (document.getElementById("minutes").innerText);
+    document.getElementById("final-minutes").innerText = finalTimeMinutes;
+
+    let finalTimeSeconds = (document.getElementById("seconds").innerText);
+    document.getElementById("final-seconds").innerText = finalTimeSeconds;
 
 }
 
