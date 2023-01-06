@@ -102,6 +102,14 @@ function clickClass() {
 
 }
 
+function removeClickClass () {
+
+    document.getElementById('optionA').classList.remove('click-class');
+    document.getElementById('optionB').classList.remove('click-class');
+    document.getElementById('optionC').classList.remove('click-class');
+
+}
+
 /**
  * This function runs when the user clicks the submit button
  * It then calls the correct function to check answers 
@@ -153,17 +161,17 @@ function checkQuizBAnswers() {
  */
 function nextQuestion() {
 
-
     if(activeQuiz == 'A' && runningQuestion<quizAQuestions.length-1) {
         console.log("running quizA");
         runningQuestion++;
         displayQuizA();
-        
+        removeClickClass();
     
     } else if (activeQuiz == 'B' && runningQuestion<quizBQuestions.length-1) {
         console.log("running quizB");
         runningQuestion++;
         displayQuizB();
+        removeClickClass();
     }
 
 /**
