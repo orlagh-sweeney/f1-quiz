@@ -43,14 +43,20 @@ document.addEventListener("DOMContentLoaded", function() {
  */
 optionA.addEventListener('click', function(){
     window.selectedAnswer="A";
+    clickClass();
+
 });
 
 optionB.addEventListener('click', function(){
     window.selectedAnswer="B";
+    clickClass();
+
 });
 
 optionC.addEventListener('click', function(){
     window.selectedAnswer="C";
+    clickClass();
+
 });
 
 /**
@@ -75,6 +81,24 @@ function runQuiz(quizType) {
 function userAnswer(answer) {
 
     console.log(answer);
+
+}
+
+function clickClass() {
+
+    if (window.selectedAnswer === "A") {
+        document.getElementById('optionA').classList.add('click-class');
+        document.getElementById('optionB').classList.remove('click-class');
+        document.getElementById('optionC').classList.remove('click-class');
+    } if (window.selectedAnswer === "B") {
+        document.getElementById('optionB').classList.add('click-class');
+        document.getElementById('optionA').classList.remove('click-class');
+        document.getElementById('optionC').classList.remove('click-class');
+    } if (window.selectedAnswer === "C") {
+        document.getElementById('optionC').classList.add('click-class');
+        document.getElementById('optionA').classList.remove('click-class');
+        document.getElementById('optionB').classList.remove('click-class');
+    }
 
 }
 
@@ -129,10 +153,13 @@ function checkQuizBAnswers() {
  */
 function nextQuestion() {
 
+
     if(activeQuiz == 'A' && runningQuestion<quizAQuestions.length-1) {
         console.log("running quizA");
         runningQuestion++;
         displayQuizA();
+        
+    
     } else if (activeQuiz == 'B' && runningQuestion<quizBQuestions.length-1) {
         console.log("running quizB");
         runningQuestion++;
