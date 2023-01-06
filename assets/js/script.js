@@ -281,7 +281,7 @@ function incrementTimer() {
  */
 function returnData(input) {
 
-    return input > 9 ? input : `0${input}`
+    return input > 9 ? input : `0${input}`;
 }
 
 /**
@@ -345,6 +345,7 @@ function displayQuizA() {
     optionA.textContent = q.optionA;
     optionB.textContent = q.optionB;
     optionC.textContent = q.optionC;
+    quizName.textContent = "2022 Wrapped";
 
     window.isLastQuestion = q.isLastQuestion;
 
@@ -358,6 +359,7 @@ function displayQuizB() {
     optionA.textContent = q.optionA;
     optionB.textContent = q.optionB;
     optionC.textContent = q.optionC;
+    quizName.textContent = "Driver Trivia";
 
     window.isLastQuestion = q.isLastQuestion;
 
@@ -401,7 +403,7 @@ let quizAQuestions = [
         isLastQuestion: "No",
     },
     {
-        questionText: "Where was the final Grand Prix of 2022",
+        questionText: "Where was the final Grand Prix of 2022?",
         optionA: "Abu Dhabi",
         optionB: "Bahrain",
         optionC: "Brazil",

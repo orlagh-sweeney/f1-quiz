@@ -180,3 +180,58 @@
  button:hover {
     background-color: #cc0808;
  }
+
+ /* Media Queries */
+
+ /* For medium screens size from 950px wide and down */
+ @media screen and (max-width: 950px) {
+
+.container {
+   width: 85vw;
+}
+
+/* paragraph and list items for max-width 950px */
+
+p {
+   font-size: 100%;
+   padding-right: 10%;
+   padding-left: 10%;
+}
+
+li {
+   font-size: 100%;
+}
+
+.quiz-type {
+   text-align: center;
+}
+
+button {
+   display: block;
+   margin: 0 auto;
+   margin-top: 5px;
+}
+
+.scores {
+   display: block;
+   margin: 0 auto;
+   margin-top: 5px;
+}
+
+ }
+
+  /* Media Queries */
+
+ /* For medium screens size from 600px wide and down */
+ @media screen and (max-width: 600px) { 
+
+.container {
+   height: 70vh;
+}
+
+p {
+   padding-right: 10%;
+   padding-left: 10%;
+}
+
+ }
