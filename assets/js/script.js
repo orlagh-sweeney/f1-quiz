@@ -33,9 +33,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 let quizType = this.getAttribute("data-type");
                 runQuiz(quizType);
             }
-        })
+        });
     }
-})
+});
 
 /**
  * Event listeners for the answer options to be
@@ -43,15 +43,15 @@ document.addEventListener("DOMContentLoaded", function() {
  */
 optionA.addEventListener('click', function(){
     window.selectedAnswer="A";
-})
+});
 
 optionB.addEventListener('click', function(){
     window.selectedAnswer="B";
-})
+});
 
 optionC.addEventListener('click', function(){
     window.selectedAnswer="C";
-})
+});
 
 /**
  * This the main quiz function which runs when the user
