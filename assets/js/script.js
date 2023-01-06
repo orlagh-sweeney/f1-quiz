@@ -161,25 +161,25 @@ function checkQuizBAnswers() {
  */
 function nextQuestion() {
 
-    if(activeQuiz == 'A' && runningQuestion<quizAQuestions.length-1) {
+    if (activeQuiz == 'A' && runningQuestion<quizAQuestions.length-1) {
         console.log("running quizA");
         runningQuestion++;
         displayQuizA();
         removeClickClass();
-    
     } else if (activeQuiz == 'B' && runningQuestion<quizBQuestions.length-1) {
         console.log("running quizB");
         runningQuestion++;
         displayQuizB();
         removeClickClass();
+    } else if (window.isLastQuestion = "Yes") {
+        finalScore();
     }
+}
 
 /**
  * This function allows the user to quit the quiz 
  * and return to the inital quiz page
  */
-}
-
 function quitQuiz () {
     
 }
@@ -200,11 +200,20 @@ function incrementScore() {
  * Takes current score from the DOM and increments it by 1
  */
 function incrementTimePenalty() {
+    
     let oldScore = parseInt(document.getElementById("incorrect").innerText);
     document.getElementById("incorrect").innerText = ++oldScore;
 }
 
 function incrementTimer() {
+
+}
+
+function finalScore() {
+
+    document.getElementById('quiz').style.display = "none"; 
+    document.getElementById('intro-area').style.display = "none"; 
+    document.getElementById('results-area').style.display = "block";  
 
 }
 
