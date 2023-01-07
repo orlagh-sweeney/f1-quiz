@@ -187,6 +187,7 @@ Answers to question were fact checked using the following websites:
     - I used W3Schools to create a fixed footer. I used the solution on the [Fixed Footer](https://www.w3schools.com/howto/howto_css_fixed_footer.asp) page. 
     - I used code from CodeExpainedRepo to create the functions to call Quiz A or Quiz B questions: [CodeExplainedRepo](https://github.com/CodeExplainedRepo/Multiple-Choice-Quiz-JavaScript/blob/master/quiz.js).   
     - I used code from an article by Walter Nacimento on [dev.to](https://dev.to/) to create the quiz timer: [Creating a timer with javascript](https://dev.to/walternascimentobarroso/creating-a-timer-with-javascript-8b7).
+    - I used a solution by Max Lemieux on Stackoverflow to add the 10 second time penalty for wrong aswers: [Max Lemieux answer](https://stackoverflow.com/a/60370583);
 
 ## Acknowledgements
 - Thank you to my mentor Marcel for his feedback and suggestions at each stage of the project.
