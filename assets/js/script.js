@@ -1,6 +1,6 @@
 const runQuizA = document.getElementsByClassName('btn-quiz-1');
 const runQuizB = document.getElementsByClassName('btn-quiz-2');
-const submitBtn = document.getElementsByClassName('submit');
+const submitBtn = document.getElementById('submit');
 const nextBtn = document.getElementsByClassName('next');
 const quitBtn = document.getElementsByClassName('btn-quit');
 const quizName = document.getElementById('quiz-name');
@@ -141,6 +141,8 @@ function checkAnswer() {
         checkQuizBAnswers();
     }
 
+    submitBtn.disabled = true;
+
 }
 
 /**
@@ -199,6 +201,9 @@ function nextQuestion() {
         timerReset();
         timerPause();
     }
+
+    submitBtn.disabled = false;
+    
 }
 
 /**
