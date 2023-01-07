@@ -156,6 +156,8 @@ The following features were manually tested on:
 - Once the last question is answered, all scoring parameters are reset should the user wish to try the quiz again. 
 
 ### Bugs
+- The submit button was able to be clicked more than once, this meant that if the user double clicked the button their score would increment by two. To fix this issue, I used the disable property on the submit button. Now, when the user clicks 'submit' the submit button is disabled, then when the user clicks on 'next' the submit button is enabled once again for the next question. 
+- The Lap Time timer had a glitch when the seconds were increasing from 09 to 10. A zero was appearing infront of the number 10 causing the score area to momentarily shift to the left which would have been noticeable for the user. I fixed this issue by updating the returnData function from > 10 to > 9. This fixed the bug and improved user experience. 
 
 ## Finished Product
 - The live link to the completed product can be found here: https://orlagh-sweeney.github.io/f1-quiz/
