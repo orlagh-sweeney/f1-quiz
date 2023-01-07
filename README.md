@@ -4,7 +4,7 @@ The Formula 1 Quiz is a novelty quiz created for F1 fans around the globe. The q
 
 This quiz was built as my Portfolio 2 project following completion of the Code Institute Javascript module. 
 
-The completed project can be viewed here: 
+The completed project can be viewed here: https://orlagh-sweeney.github.io/f1-quiz/
 
 ## Table of Contents
 1. [User Experience](#user-experience-ux)
@@ -158,13 +158,36 @@ The following features were manually tested on:
 ### Bugs
 
 ## Finished Product
+- The live link to the completed product can be found here: https://orlagh-sweeney.github.io/f1-quiz/
 
 ## Deployment
+The website was developed in Gitpod. It was then commited and pushed to GitHub. 
+The finished site was then deployed to GitHub pages using the following steps: 
+1. Open GitHub and click on the We Ride Cycling Club repository. 
+2. Once inside the repository, locate and click on the Settings tab. 
+3. On the left handside, under the 'Code and automation' section, click on Pages. 
+4. In the Branch section, locate the dropdown menu and change it from None to Main. 
+5. Click save. The page will refresh with a link to the website.
 
 ## Credit
 ### Content
+All content was written by the developer. 
+Answers to question were fact checked using the following websites:
+- [Formula 1](https://www.formula1.com/en/results.html/2022/team.html)
+- [statsf1](https://www.statsf1.com/en/2022.aspx)
+- [racingnews365](https://racingnews365.com/f1-2022-drivers-ages-and-dates-of-birth)
+
 ### Media
+- The backround image was taken from [Pixabay](https://pixabay.com/):
+    - The backgroudn image is [car-racing-1404041_1920](https://pixabay.com/photos/car-racing-barcelona-formula-1-1404041/) by schuger.
+- The favicon icon was created using [Favicon](https://favicon.io/).
+
 ### Code
+- [Stackoverflow](https://stackoverflow.com/) and [W3Schools](https://www.w3schools.com/) were used throughout the development to educate myself and to seek help and clarification features. In particular I used the following resources in my project: 
+    - I used W3Schools to create a fixed footer. I used the solution on the [Fixed Footer](https://www.w3schools.com/howto/howto_css_fixed_footer.asp) page. 
+    - I used code from CodeExpainedRepo to create the functions to call Quiz A or Quiz B questions: [CodeExplainedRepo](https://github.com/CodeExplainedRepo/Multiple-Choice-Quiz-JavaScript/blob/master/quiz.js).   
+    - I used code from an article by Walter Nacimento on [dev.to](https://dev.to/) to create the quiz timer: [Creating a timer with javascript](https://dev.to/walternascimentobarroso/creating-a-timer-with-javascript-8b7).
 
 ## Acknowledgements
-
+- Thank you to my mentor Marcel for his feedback and suggestions at each stage of the project.
+- Thank you to Code Institute for providing me with the tools and skills to complete this project. 
