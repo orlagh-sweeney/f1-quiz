@@ -154,6 +154,7 @@ function checkQuizAAnswers() {
     } else {
         console.log('incorrect');
         incrementTimePenalty();
+        addSeconds();
         }
 
 }
@@ -169,6 +170,7 @@ function checkQuizBAnswers() {
     } else {
         console.log('incorrect');
         incrementTimePenalty();
+        addSeconds();
         }
 
 }
@@ -272,6 +274,16 @@ function incrementTimer() {
     }
     userTimerMinutes.innerText = returnData(minutes);
     userTimerSeconds.innerText = returnData(seconds);
+}
+
+/**
+ * This function adds 10 seconds to the timer when 
+ * the user answers a question wrong
+ * Solution from Max Lemiuex's reponse to a stackoverflow query
+ */
+function addSeconds() {
+    seconds = seconds +10;
+    userTimerSeconds.innerHTML = seconds;
 }
 
 /**
