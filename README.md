@@ -12,7 +12,7 @@ The completed project can be viewed here:
     - [User Stories](#user-stories)
     - [Colour Scheme](#colour-scheme)
     - [Typography](#typography)
-    - [Wireframes](#wirframes)
+    - [Wireframes](#wireframes)
 2. [Features](#features)
     - [General](#general)
     - [Introduction Area](#introduction-area)
@@ -41,10 +41,30 @@ The completed project can be viewed here:
 
 ## User Experience (UX)
 ### Project Goals
+- To buld a fun quiz for Formala 1 fans incorporating the F1 theme and terminology. 
+- To clearly outline how the quiz works for the user.
+- To provide a score tracking system for the user.
+- To create a quiz with two levels of difficult with a series of multiple choice questions. 
+
 ### User Stories
+- As a user, I want to be able to understand how to play the game.
+- As a user, I want to be able to choose a level of difficulty.
+- As a user, I want to be able to keep track of my progress during the quiz.
+- As a user, I want to be able to quiz the game.
+- As a user, I want to be able to play agagin.
+
 ### Colour Scheme
+- The colour scheme closely follows the colours of the Formula 1 brand including red, white, dark grey and a green yellow colour.
+
 ### Typography 
-### Wirframes
+- Teko was used for the logo and headings with sans-serif as the fallback font.
+- Ubuntu was used for body/paragraph text with sans-serif as the fallback font.
+
+### Wireframes
+- [Balsamiq](https://balsamiq) was used to develop wireframes for mobile and desktop in the planning stage of the website. 
+    - Introduction Area:
+    - Quiz Area:
+    - Results Area: 
 
 ## Features
 ### General
