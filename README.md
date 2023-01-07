@@ -1,6 +1,10 @@
 # The Formula 1 Quiz
 
-Introduction
+The Formula 1 Quiz is a novelty quiz created for F1 fans around the globe. The quiz has two levels of diffculty based on quiz type. '2022 Wrapped' is an easy level testing the user knowledge of the latest F1 season. 'Driver Trivia' is the hard level quiz which tests the users knowledge of F1 drivers outside racing. The quiz uses F1 terminology in the socoring system to mimic the race track environment, the quiz uses term 'time penalty' in place of incorrect answers and the term 'lap time' to record how quick the user completes the quiz.  
+
+This quiz was built as my Portfolio 2 project following completion of the Code Institute Javascript module. 
+
+The completed project can be viewed here: 
 
 ## Table of Contents
 1. [User Experience](#user-experience-ux)
