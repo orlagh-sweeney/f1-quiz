@@ -75,7 +75,24 @@ The completed project can be viewed here:
 
 ## Technologies Used
 ### Languages
+- HTML
+- CSS
+- Javscript
 ### Frameworks, Libraries and Programmes
+- [Balsamiq](https://balsamiq.com/): this was used to create wireframes in the planning stage of the project. 
+- [Favicon](https://favicon.io/): this was used to generate a favicon for the website. 
+- [Fontpair](https://www.fontpair.co/): this was used to find fonts that compliment each other. 
+- [Google Fonts](https://fonts.google.com/): this was used to import fonts into the style.css file.
+- [Coolers](https://coolors.co/): this was used to create a colour pallete for the website. 
+- [Pixabay](https://pixabay.com/): this was used to find the background images for the project. 
+- [Gitpod](https://www.gitpod.io/): this was used to write, commit and to push the code to Github. 
+- [Github](https://github.com/): this was used to host and deploy the finished project. 
+- [Chrome DevTools](https://developer.chrome.com/docs/devtools/): this was used throughout the project to check responsiveness and debug. 
+- [W3C Markup Validator](https://validator.w3.org/): this was used throughout the project to validate HTML code. 
+- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/): this was used throughout the project to validate CSS code. 
+- [JSHint](https://jshint.com/): this was used throughout the project to validate Javascript code. 
+- [Responsive Design Checker](https://www.responsivedesignchecker.com/): this was used to check responsiveness on various device sizes. 
+- [Am I Respsonsive?](https://ui.dev/amiresponsive): this was used to create an image to show how the site looks on different device sizes for this README file. 
 
 ## Testing
 ### Testing User Stories
