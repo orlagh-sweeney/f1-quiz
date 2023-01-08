@@ -211,13 +211,13 @@ button:hover {
 
 /* Media Queries */
 
-/* For xxlarge medium screens size from 1920px wide and up */
+/* For xxlarge screen from 1920px wide and up */
 @media screen and (min-width: 1920px) { 
 
 /* style heading and paragraph elements for min-width 1920px */
 
 .container {
-   width: 50vw;
+   width: 55vw;
 }
 
 #logo {

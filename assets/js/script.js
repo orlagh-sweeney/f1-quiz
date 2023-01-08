@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 /**
  * Event listeners for the answer options to be
- * used in the userAnswer function
+ * used to check the answer by the user
  */
 optionA.addEventListener('click', function(){
     window.selectedAnswer="A";
