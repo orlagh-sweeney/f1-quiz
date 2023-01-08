@@ -20,7 +20,7 @@
  /* headings and paragraphs */
 
  #logo {
-   height: 150px;
+   height: 20vh;
    position: relative;
    text-shadow: 0 0 4px #ffffff;
  }
@@ -28,7 +28,7 @@
  h1 {
     font-family: 'Teko', sans-serif;
     font-weight: 500;
-    font-size: 300%;
+    font-size: 400%;
     color: #cc0808;
     text-transform: uppercase;
     position: absolute;
@@ -249,6 +249,16 @@ li {
 
 .container {
    height: 70vh;
+}
+
+#logo {
+   height: 15vh;
+}
+
+h1 {
+   font-size: 250%;
+   text-align: center;
+   width: 80%;
 }
 
 p {
