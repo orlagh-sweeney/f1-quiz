@@ -1,143 +1,143 @@
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@500&family=Ubuntu&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    border: none;
+   margin: 0;
+   padding: 0;
+   border: none;
 }
 
 /* style body */
- body {
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 400;
-    color: #252525;
-    background: url(../images/background-image.jpg) no-repeat center center;
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
- }
+body {
+   font-family: 'Ubuntu', sans-serif;
+   font-weight: 400;
+   color: #252525;
+   background: url(../images/background-image.jpg) no-repeat center center;
+   background-position: center;
+   background-size: cover;
+   height: 100vh;
+}
 
  /* style heading and paragraph elements */
 
- #logo {
+#logo {
    height: 20vh;
    position: relative;
    text-shadow: 0 0 4px #ffffff;
  }
 
- h1 {
-    font-family: 'Teko', sans-serif;
-    font-weight: 500;
-    font-size: 400%;
-    width: 80%;
-    text-align: center;
-    color: #cc0808;
-    text-transform: uppercase;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%)
+h1 {
+   font-family: 'Teko', sans-serif;
+   font-weight: 500;
+   font-size: 400%;
+   width: 80%;
+   text-align: center;
+   color: #cc0808;
+   text-transform: uppercase;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%)
     
- }
-
- h2 {
-    font-family: 'Teko', sans-serif;
-    font-weight: 500;
-    font-size: 200%;
-    color: #cc0808;
-    text-align: center;
- }
-
- p {
-    text-align: center;
-    font-size: 120%;
- }
-
- /* style footer and social media icons */
-
- footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 75px;
-    text-align: center;
-    background-color: #cc0808;
- }
-
- .social-links {
-    padding-top: 20px;
- }
-
- .social-links > li {
-    display: inline;
- }
-
- .social-links i {
-    color: #ffffff;
-    font-size: 160%;
-    margin-left: 5%;
-    margin-right: 5%;
- }
-
- .social-links i:hover {
-    color: #a9fa27;
- }
-
- /* style main div containers which hold the 3 stages of the quiz: introduction, quiz and results */
-
- .container {
-    background-color: rgba(169, 250, 39, 0.7);
-    border-radius: 5px;
-    width: 70vw;
-    height: fit-content;
-    padding-bottom: 6vh;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%)
- }
-
- .h2A {
-   margin-top: 5%;
- }
-
- .h2B {
-   margin-top: 5%
- }
-
- /* style intro-area div */
-
-#intro-area > p {
-    margin-top: 5px;
-    margin-bottom: 5px;
 }
 
- .quiz-type {
-    text-align: center;
-    margin-top: 20px;
- }
-
- /* style quiz-area div */
-
- #quiz {
-    display: none;
- }
-
- .quiz-area {
+h2 {
+   font-family: 'Teko', sans-serif;
+   font-weight: 500;
+   font-size: 200%;
+   color: #cc0808;
    text-align: center;
- }
+}
 
- .quiz-area > .options {
+p {
+   text-align: center;
+   font-size: 120%;
+}
+
+/* style footer and social media icons */
+
+footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 75px;
+   text-align: center;
+   background-color: #cc0808;
+}
+
+.social-links {
+   padding-top: 20px;
+}
+
+.social-links > li {
+   display: inline;
+}
+
+.social-links i {
+   color: #ffffff;
+   font-size: 160%;
+   margin-left: 5%;
+   margin-right: 5%;
+}
+
+.social-links i:hover {
+   color: #a9fa27;
+}
+
+/* style main div containers which hold the 3 stages of the quiz: introduction, quiz and results */
+
+.container {
+   background-color: rgba(169, 250, 39, 0.7);
+   border-radius: 5px;
+   width: 70vw;
+   height: fit-content;
+   padding-bottom: 6vh;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%)
+}
+
+.h2A {
+   margin-top: 5%;
+}
+
+.h2B {
+   margin-top: 5%
+}
+
+/* style intro-area div */
+
+#intro-area > p {
+   margin-top: 5px;
+   margin-bottom: 5px;
+}
+
+.quiz-type {
+   text-align: center;
+   margin-top: 20px;
+}
+
+/* style quiz-area div */
+
+#quiz {
+   display: none;
+}
+
+.quiz-area {
+   text-align: center;
+}
+
+.quiz-area > .options {
    display: inline-block;
    margin-top: 10px;
- }
+}
 
- .quiz-area > p {
-    margin-top: 5px;
- }
+.quiz-area > p {
+   margin-top: 5px;
+}
 
- /* style li containing questions answers */
+/* style li containing questions answers */
 
  li {
    padding-bottom: 10px;
@@ -155,64 +155,63 @@
 
  /* style quiz controls buttons and live score area */
 
- .quiz-controls {
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
- }
-
-#quiz > .score-area {
-    text-align: center;
-    margin-top: 30px;
+.quiz-controls {
+   text-align: center;
+   margin-top: 10px;
+   margin-bottom: 10px;
 }
 
- .scores {
-    display: inline-block;
-    margin-left: 5%;
-    margin-right: 5%;
- }
-
- #quiz > .quit {
-    text-align: center;
-    margin-top: 20px;
- }
-
-
- /* style results area */
-
- #results-area {
-    display: none;
- }
-
- #results-area > .score-area {
+#quiz > .score-area {
    text-align: center;
    margin-top: 30px;
 }
 
- #results-area > .quit {
+.scores {
+   display: inline-block;
+   margin-left: 5%;
+   margin-right: 5%;
+}
+
+#quiz > .quit {
+   text-align: center;
+   margin-top: 20px;
+}
+
+
+/* style results area */
+
+#results-area {
+   display: none;
+}
+
+#results-area > .score-area {
+   text-align: center;
+   margin-top: 30px;
+}
+
+#results-area > .quit {
    text-align: center;
    margin-top: 40px;
 }
- 
 
- /* global style for buttons */
+/* global style for buttons */
 
- button {
-    background-color: #252525;
-    color: #a9fa27;
-    height: 30px;
-    width: 120px;
-    border-radius: 4px;
-    text-transform: uppercase;
- }
+button {
+   background-color: #252525;
+   color: #a9fa27;
+   height: 30px;
+   width: 120px;
+   border-radius: 4px;
+   text-transform: uppercase;
+}
 
- button:hover {
-    background-color: #cc0808;
- }
+button:hover {
+   background-color: #cc0808;
+}
 
- /* Media Queries */
+/* Media Queries */
 
- /* For larger to medium screens size from 1200px wide and down */
+/* For larger to medium screens size from 1200px wide and down */
  @media screen and (max-width: 1200px) { 
 
 /* style paragraph for max-width 1200px */
@@ -223,7 +222,7 @@ p {
    padding-left: 10%;
    }
 
- }
+}
 
  /* For medium screens size from 950px wide and down */
  @media screen and (max-width: 950px) {
@@ -261,7 +260,7 @@ li {
 
  }
 
-  /* Media Queries */
+/* Media Queries */
 
  /* For medium screens size from 600px wide and down */
  @media screen and (max-width: 600px) { 
@@ -298,10 +297,10 @@ button {
    margin-top: 5px;
 }
 
- }
+}
 
  /* For small screens size from 320px wide and down */
- @media screen and (max-width: 330px) {
+ @media screen and (max-width: 320px) {
 
 /* style h1, h2, p, li and buttons for max-width 320px */
 
