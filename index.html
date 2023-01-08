@@ -11,11 +11,14 @@
     <title>The Formula 1 Quiz</title>
 </head>
 <body>
+    <!-- quiz logo -->
     <div id="logo">
     <h1 id="heading">The Formula 1 Quiz</h1>
     </div>
 
+    <!-- quiz introduction area -->
     <div id="intro-area" class="container">
+        <!-- instruction on how to play -->
         <h2 class="h2A">How to play</h2>
         <p>Welcome to The Formula 1 Quiz!<br>
             To start, select which quiz you want to play from the options below.<br> 
@@ -23,7 +26,9 @@
             To move onto the next question, click on the next button.<br> 
             For each wrong question you will receive a 10 second Time Penalty. 
             </p>
-        <h2 class="h2B" id="choose">Choose your quiz</h2>
+
+        <!-- quiz type selection area -->
+            <h2 class="h2B" id="choose">Choose your quiz</h2>
         <p>2022 Wrapped (level = easy)<br> 
             Driver Trivia (level = hard)
         </p>
@@ -33,7 +38,9 @@
         </div>
     </div>
 
+    <!-- main quiz container -->
     <div id="quiz" class="container">
+        <!-- quiz area holding quiz name, questions and answers -->
         <div class="quiz-area">
             <h2 class="h2A" id="quiz-name">Quiz Name</h2>
             <p id="question">Question</p>
@@ -44,22 +51,26 @@
             </ul>
         </div>
         
+        <!-- quiz controls area with the submit and next button -->
         <div class="quiz-controls">
             <button data-type="submit" id="submit">Submit</button>
             <button data-type="next" class="next">Next</button>
         </div>
 
+        <!-- quiz scocre area -->
         <div class="score-area">
             <p class="scores">Score: <span id="score">0</span></p>
             <p class="scores">Time Penalties: <span id="incorrect">0</span></p>
             <p class="scores">Lap Time: <span id="minutes">00</span>:<span id="seconds">00</span></p>
         </div>
         
+        <!-- quit button -->
         <div id="quit-game" class="quit">
             <button data-type="quit" class="btn-quit">Quit</button>
         </div>
     </div>
 
+     <!-- final results area of the quiz -->
     <div id="results-area" class="container">
         <h2 class="h2A">The results are in!</h2>
         <div class="score-area">
@@ -68,6 +79,7 @@
             <p class="scores">Lap Time: <span id="final-minutes">00</span>:<span id="final-seconds">00</span></p>
         </div>
 
+        <!-- buttons to allow the user to play the quiz again or quit -->
         <h2 class="h2B">Ready to race again?</h2>
         <div class="quiz-type">
             <button data-type="2022 Wrapped" class="btn-quiz-1">2022 Wrapped</button>
@@ -78,6 +90,7 @@
         </div>
     </div>
 
+     <!-- footer with social media links -->
     <footer>
         <ul class="social-links">
             <li>
@@ -91,7 +104,10 @@
             </li>
         </ul>
     </footer>
+    
+     <!-- font awesome script for icons -->
     <script src="https://kit.fontawesome.com/f687081393.js" crossorigin="anonymous"></script>
+     <!-- javascript file link -->
     <script src="assets/js/script.js"></script>
 </body>
 </html>
