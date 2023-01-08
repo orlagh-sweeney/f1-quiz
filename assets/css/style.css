@@ -211,6 +211,39 @@ button:hover {
 
 /* Media Queries */
 
+/* For xxlarge medium screens size from 1920px wide and up */
+@media screen and (min-width: 1920px) { 
+
+/* style heading and paragraph elements for min-width 1920px */
+
+.container {
+   width: 50vw;
+}
+
+#logo {
+   height: 30vh;
+}
+
+h1 {
+   font-size: 600%;
+}
+
+h2 {
+   font-size: 300%;
+}
+
+p, .options > li {
+   font-size: 150%;
+}
+
+button {
+   width: 160px;
+   height: 40px;
+   font-size: 110%;
+}
+
+}
+
 /* For larger to medium screens size from 1200px wide and down */
  @media screen and (max-width: 1200px) { 
 
