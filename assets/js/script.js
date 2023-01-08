@@ -1,7 +1,7 @@
 const runQuizA = document.getElementsByClassName('btn-quiz-1');
 const runQuizB = document.getElementsByClassName('btn-quiz-2');
 const submitBtn = document.getElementById('submit');
-const nextBtn = document.getElementsByClassName('next');
+const nextBtn = document.getElementById('next');
 const quitBtn = document.getElementsByClassName('btn-quit');
 const quizName = document.getElementById('quiz-name');
 const questionText = document.getElementById('question');
@@ -34,6 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 let quizType = this.getAttribute("data-type");
                 runQuiz(quizType);
                 startTimer();
+                nextBtn.disabled = true;
             }
         });
     }
@@ -142,6 +143,7 @@ function checkAnswer() {
     }
 
     submitBtn.disabled = true;
+    nextBtn.disabled = false;
 
 }
 
@@ -203,6 +205,7 @@ function nextQuestion() {
     }
 
     submitBtn.disabled = false;
+    nextBtn.disabled = true;
     
 }
 
