@@ -1,8 +1,8 @@
 # The Formula 1 Quiz
 
-The Formula 1 Quiz is a novelty quiz created for F1 fans around the globe. The quiz has two levels of diffculty based on quiz type. '2022 Wrapped' is an easy level testing the user knowledge of the latest F1 season. 'Driver Trivia' is the hard level quiz which tests the users knowledge of F1 drivers outside racing. The quiz uses F1 terminology in the socoring system to mimic the race track environment, the quiz uses term 'time penalty' in place of incorrect answers and the term 'lap time' to record how quick the user completes the quiz.  
+The Formula 1 Quiz is a novelty quiz created for F1 fans around the globe. The quiz has two levels of diffculty based on quiz type. '2022 Wrapped' is an easy level testing the user knowledge of the latest F1 season. 'Driver Trivia' is the hard level quiz which tests the users knowledge of F1 drivers outside of the race track. The quiz uses F1 terminology in the socoring system to mimic the race track environment, the quiz uses term 'time penalty' in place of incorrect answers and the term 'lap time' to record how quick the user completes the quiz. For a wrong question answered, the user receives a 10 second time penalty added onto the laptime.  
 
-This quiz was built as my Portfolio 2 project following completion of the Code Institute Javascript module. 
+This quiz was built as my Portfolio 2 project following completion of the Code Institute Javascript module. The quiz uses CSS, HTMl and Javascript. 
 
 The completed project can be viewed here: https://orlagh-sweeney.github.io/f1-quiz/
 
@@ -69,10 +69,40 @@ The completed project can be viewed here: https://orlagh-sweeney.github.io/f1-qu
 
 ## Features
 ### General
+- The website incorporates a responsive design so it can be used across multiple device sizes. 
+- The website uses a consistent colour scheme across the site. 
+- The website has a background image of a F1 racing car inline with the theme. 
+- All buttons on the website have a hover effect to give feedback to the user. 
+- Each page has a repsonsive footer with social media links. Social media links open in a new browser window.<br>
+<image src="" width="600px"></image>
+
 ### Introduction Area
+- This area contains two parts, a 'how to play' area and a 'choose your quiz' area.
+- The how to play area details the rules of the quiz for the user including how to select and submit an answer, and how to move onto the next question.
+- It also informs the user of the time penalty function in relation to their laptime.
+- The choose your quiz area lets the user know which quiz game is easy and which quiz game is hard.
+- By clicking on the buttons the appropriate quiz will load for the user. 
+
 ### Quiz Area
+- The quiz area in the main quiz game section of the website.
+- This div loads the quiz name, questions and answers based on the button the user clicked in the introduction area. 
+- The timer starts when the quiz loads.
+- When the user hovers over an answer the text colour changes to red, when they leave an answer it goes back to grey. 
+- When the user clicks an answer the text colour changes permantly to red so they know it has been selected. 
+- When they user clicks submit the answer will be assessed and either the Score or Time Penalty will be incremented. 
+- If the wrong answer was submitted 10 seconds will be automatically added onto the Lap Time.
+- When the user clicks next the next question will be loaded. 
+- This section contain a quit button if the user wants to end the game. This button will bring the user back to the start of the website.
+
 ### Results Area
+- This area contains the final result of the quiz.
+- It displays Score, Time Penalties and Laptime. 
+- This section also invites the user the play again and has buttons to select which quiz.
+- This section contain a quit button which brings the user back to the start of the website.
+
 ### Future Features
+- A future feature includes a leaderboard section where the user can save their score and compare to other players.
+- Other quiz types can be added such a Formula 1 history theme to add another level of difficulty. 
 
 ## Technologies Used
 
