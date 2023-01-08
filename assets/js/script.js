@@ -424,7 +424,7 @@ let quizAQuestions = [
         optionA: "Abu Dhabi",
         optionB: "Bahrain",
         optionC: "Brazil",
-        correctAnswer: "B",
+        correctAnswer: "A",
         isLastQuestion: "No",
     },
     {
