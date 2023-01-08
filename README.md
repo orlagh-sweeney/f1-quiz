@@ -165,7 +165,7 @@ The following tools were used to test the website:
 The website was manually tested on the following devices with no issues:
 - Samsung Galaxy S10+
 - MacBook Pro 13"
-- Dell 27" Desktop Monitor (P2722H)
+- Samsung 27" Desktop Monitor (s27a600uuu)
 
 ### Browser Testing
 The website was tested on the following browsers with no issues:
@@ -180,7 +180,8 @@ The following features were manually tested on:
 - Clicking on the 'quit' button will bring the user back to the initial quiz page and reset the quiz. 
 - The laptime clock starts once the relevant quiz is loaded.
 - When an answer option is clicked the text changes to red. If another answer is clicked, the first answer goes back to grey and the new answer is highlighted in red.
-- When the 'submit' button is clicked the answer is checked. If the answer is correct the 'score' is increased, if the answer is incorrect the 'time penalty' is increased.
+- When the 'submit' button is clicked the answer is checked. If the answer is correct the 'Score' is increased, if the answer is incorrect the 'Time Penalty' is increased.
+- If the answer is incorrect, 10 seconds are automatically added onto the 'Lap Time'. 
 - When the 'next' button is clicked the next question of the quiz loads. 
 - When the last question of the quiz is answered the user is brought to the results page. 
 - Once the last question is answered, all scoring parameters are reset should the user wish to try the quiz again. 
@@ -216,11 +217,12 @@ Answers to question were fact checked using the following websites:
 - The favicon icon was created using [Favicon](https://favicon.io/).
 
 ### Code
-- [Stackoverflow](https://stackoverflow.com/) and [W3Schools](https://www.w3schools.com/) were used throughout the development to educate myself and to seek help and clarification features. In particular I used the following resources in my project: 
+- [Stackoverflow](https://stackoverflow.com/) and [W3Schools](https://www.w3schools.com/) were used throughout the development to educate myself and to seek help and clarification features. 
+- In particular I used the following resources in my project: 
     - I used W3Schools to create a fixed footer. I used the solution on the [Fixed Footer](https://www.w3schools.com/howto/howto_css_fixed_footer.asp) page. 
     - I used code from CodeExpainedRepo to create the functions to call Quiz A or Quiz B questions: [CodeExplainedRepo](https://github.com/CodeExplainedRepo/Multiple-Choice-Quiz-JavaScript/blob/master/quiz.js).   
     - I used code from an article by Walter Nacimento on [dev.to](https://dev.to/) to create the quiz timer: [Creating a timer with javascript](https://dev.to/walternascimentobarroso/creating-a-timer-with-javascript-8b7).
-    - I used a solution by Max Lemieux on Stackoverflow to add the 10 second time penalty for wrong aswers: [Max Lemieux answer](https://stackoverflow.com/a/60370583);
+    - I used a solution by Max Lemieux on Stackoverflow to add the 10 second time penalty for wrong aswers: [Max Lemieux answer](https://stackoverflow.com/a/60370583).
 
 ## Acknowledgements
 - Thank you to my mentor Marcel for his feedback and suggestions at each stage of the project.
