@@ -6,7 +6,7 @@
     border: none;
 }
 
-/* body */
+/* style body */
  body {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 400;
@@ -17,7 +17,7 @@
     height: 100vh;
  }
 
- /* headings and paragraphs */
+ /* style heading and paragraph elements */
 
  #logo {
    height: 20vh;
@@ -84,7 +84,7 @@
     color: #a9fa27;
  }
 
- /* style main div containers */
+ /* style main div containers which hold the 3 stages of the quiz: introduction, quiz and results */
 
  .container {
     background-color: rgba(169, 250, 39, 0.7);
@@ -137,6 +137,8 @@
     margin-top: 5px;
  }
 
+ /* style li containing questions answers */
+
  li {
    padding-bottom: 10px;
    font-size: 120%;
@@ -150,6 +152,8 @@
  .click-class {
    color: #cc0808;
  }
+
+ /* style quiz controls buttons and live score area */
 
  .quiz-controls {
     text-align: center;
@@ -191,7 +195,7 @@
 }
  
 
- /* style buttons */
+ /* global style for buttons */
 
  button {
     background-color: #252525;
@@ -208,10 +212,10 @@
 
  /* Media Queries */
 
-   /* Media Queries */
-
  /* For larger to medium screens size from 1200px wide and down */
  @media screen and (max-width: 1200px) { 
+
+/* style paragraph for max-width 1200px */
 
 p {
    font-size: 100%;
@@ -224,13 +228,15 @@ p {
  /* For medium screens size from 950px wide and down */
  @media screen and (max-width: 950px) {
 
+/* style paragraph and list items for max-width 950px */
+
 .container {
    width: 85vw;
    height: fit-content;
    padding-bottom: 3vh;
 }
 
-/* paragraph and list items for max-width 950px */
+/* style paragraph and list items for max-width 950px */
 
 p {
    font-size: 100%;
@@ -241,6 +247,8 @@ p {
 li {
    font-size: 100%;
 }
+
+/* style quiz-type and score area for max-width 950px */
 
 .quiz-type {
    text-align: center;
@@ -257,6 +265,8 @@ li {
 
  /* For medium screens size from 600px wide and down */
  @media screen and (max-width: 600px) { 
+
+/* style logo, h1, p, li and buttons for max-width 600px */
 
 #logo {
    height: 15vh;
@@ -293,6 +303,8 @@ button {
  /* For small screens size from 320px wide and down */
  @media screen and (max-width: 330px) {
 
+/* style h1, h2, p, li and buttons for max-width 320px */
+
 h1 {
    font-size: 200%;
 }
@@ -311,9 +323,13 @@ button {
    display: inline;
 }
 
+/* scorea area for max-width 320px */
+
 #quiz .score-area, #results-area .score-area {
    margin-top: 10px;
 }
+
+/* footer for max-width 320px */
 
 footer {
    height: 12vh;
