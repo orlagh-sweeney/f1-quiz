@@ -90,7 +90,8 @@
     background-color: rgba(169, 250, 39, 0.7);
     border-radius: 5px;
     width: 70vw;
-    height: 60vh;
+    height: fit-content;
+    padding-bottom: 6vh;
     position: absolute;
     top: 50%;
     left: 50%;
