@@ -289,3 +289,34 @@ button {
 }
 
  }
+
+ /* For small screens size from 320px wide and down */
+ @media screen and (max-width: 330px) {
+
+h1 {
+   font-size: 200%;
+}
+
+h2 {
+   font-size: 150%;
+}
+
+p, li {
+   font-size: 75%;
+}
+
+button {
+   height: 20px;
+   font-size: 75%;
+   display: inline;
+}
+
+#quiz .score-area, #results-area .score-area {
+   margin-top: 10px;
+}
+
+footer {
+   height: 12vh;
+}
+
+}
