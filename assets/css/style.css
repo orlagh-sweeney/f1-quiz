@@ -124,18 +124,23 @@
     display: none;
  }
 
- .quiz-area > p {
-    margin-top: 5px;
+ .quiz-area {
+   text-align: center;
  }
 
- .options {
-   margin-left: 40%;
+ .quiz-area > .options {
+   display: inline-block;
    margin-top: 10px;
+ }
+
+ .quiz-area > p {
+    margin-top: 5px;
  }
 
  li {
    padding-bottom: 10px;
    font-size: 120%;
+   text-align: left;
  }
 
  li:hover {
