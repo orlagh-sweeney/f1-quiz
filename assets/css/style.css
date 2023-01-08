@@ -29,12 +29,15 @@
     font-family: 'Teko', sans-serif;
     font-weight: 500;
     font-size: 400%;
+    width: 80%;
+    text-align: center;
     color: #cc0808;
     text-transform: uppercase;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%)
+    
  }
 
  h2 {
@@ -217,6 +220,8 @@ p {
 
 .container {
    width: 85vw;
+   height: fit-content;
+   padding-bottom: 3vh;
 }
 
 /* paragraph and list items for max-width 950px */
@@ -247,23 +252,22 @@ li {
  /* For medium screens size from 600px wide and down */
  @media screen and (max-width: 600px) { 
 
-.container {
-   height: 70vh;
-}
-
 #logo {
    height: 15vh;
 }
 
 h1 {
    font-size: 250%;
-   text-align: center;
-   width: 80%;
 }
 
 p {
    padding-right: 10%;
    padding-left: 10%;
+   font-size: 90%;
+}
+
+li {
+   font-size: 90%;
 }
 
 .scores {
