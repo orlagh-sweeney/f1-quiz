@@ -74,14 +74,15 @@ The completed project can be viewed here: https://orlagh-sweeney.github.io/f1-qu
 - The website has a background image of a F1 racing car inline with the theme. 
 - All buttons on the website have a hover effect to give feedback to the user. 
 - Each page has a repsonsive footer with social media links. Social media links open in a new browser window.<br>
-<image src="" width="600px"></image>
+<image src="assets/readme-files/f1quiz-footer.png" width="700px"></image>
 
 ### Introduction Area
 - This area contains two parts, a 'how to play' area and a 'choose your quiz' area.
 - The how to play area details the rules of the quiz for the user including how to select and submit an answer, and how to move onto the next question.
 - It also informs the user of the time penalty function in relation to their laptime.
 - The choose your quiz area lets the user know which quiz game is easy and which quiz game is hard.
-- By clicking on the buttons the appropriate quiz will load for the user. 
+- By clicking on the buttons the appropriate quiz will load for the user.<br>
+<image src="assets/readme-files/f1quiz-intro.png" width="700px"></image>
 
 ### Quiz Area
 - The quiz area in the main quiz game section of the website.
@@ -92,13 +93,15 @@ The completed project can be viewed here: https://orlagh-sweeney.github.io/f1-qu
 - When they user clicks submit the answer will be assessed and either the Score or Time Penalty will be incremented. 
 - If the wrong answer was submitted 10 seconds will be automatically added onto the Lap Time.
 - When the user clicks next the next question will be loaded. 
-- This section contain a quit button if the user wants to end the game. This button will bring the user back to the start of the website.
+- This section contain a quit button if the user wants to end the game. This button will bring the user back to the start of the website.<br>
+<image src="assets/readme-files/f1quiz-quiz.png" width="700px"></image>
 
 ### Results Area
 - This area contains the final result of the quiz.
 - It displays Score, Time Penalties and Laptime. 
 - This section also invites the user the play again and has buttons to select which quiz.
-- This section contain a quit button which brings the user back to the start of the website.
+- This section contain a quit button which brings the user back to the start of the website.<br>
+<image src="assets/readme-files/f1quiz-results.png" width="700px"></image>
 
 ### Future Features
 - A future feature includes a leaderboard section where the user can save their score and compare to other players.
