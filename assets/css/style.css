@@ -177,7 +177,6 @@ footer {
    margin-top: 20px;
 }
 
-
 /* style results area */
 
 #results-area {
@@ -207,6 +206,43 @@ button {
 
 button:hover {
    background-color: #cc0808;
+}
+
+/* style modal box */
+
+#myModal {
+   display: none;
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 1;
+   padding-top: 40vh;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(37,37,37,.3)
+}
+
+#modal-content {
+   background-color: #cc0808;
+   color: #ffffff;
+   margin: auto;
+   padding: 10px;
+   border: 2px solid #ffffff;
+   border-radius: 10px;
+   width: fit-content;
+}
+
+#close {
+   float: right;
+   color: #ffffff;
+   font-size: 28px;
+   font-weight: bold;
+}
+
+#close:hover, #close:focus {
+   color: #252525;
+   text-decoration: none;
+   cursor: pointer;
 }
 
 /* Media Queries */

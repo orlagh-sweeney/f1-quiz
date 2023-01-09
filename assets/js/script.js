@@ -143,8 +143,7 @@ function removeClickClass () {
 function checkAnswer() {
 
     if (document.getElementById('activated').classList.contains('not-clicked')) {
-        alert(`Message from race engineer: You must select an answer before clicking submit!!`);
-        console.log('no answer selected');
+        callModal();
     } else if (activeQuiz == 'A') {
         checkQuizAAnswers();
         submitBtn.disabled = true;
@@ -155,6 +154,23 @@ function checkAnswer() {
         nextBtn.disabled = false;
     }
 
+}
+
+function callModal() {
+
+    var modal = document.getElementById('myModal');
+    var modalSpan = document.getElementById('close');
+    modal.style.display = "block";
+
+    modalSpan.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+}
 }
 
 /**
