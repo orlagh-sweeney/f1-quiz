@@ -69,9 +69,9 @@ The completed project can be viewed here: https://orlagh-sweeney.github.io/f1-qu
 
 ### Wireframes
 - [Balsamiq](https://balsamiq) was used to develop wireframes for mobile and desktop in the planning stage of the website. 
-    - Introduction Area: <br> <image src="assets/readme-files/wireframe-intro-desktop.png" height="500px"></image> <image src="assets/readme-files/wireframe-intro-mobile.png" height="500px"></image>
-    - Quiz Area: <br> <image src="assets/readme-files/wireframe-quiz-desktop.png" height="500px"></image> <image src="assets/readme-files/wireframe-quiz-mobile.png" height="500px"></image>
-    - Results Area: <br> <image src="assets/readme-files/wireframe-results-desktop.png" height="500px"></image> <image src="assets/readme-files/wireframe-results-mobile.png" height="500px"></image>
+    - Introduction Area: <br> <image src="assets/readme-files/wireframe-intro-desktop.png" width="600px"></image> <br> <image src="assets/readme-files/wireframe-intro-mobile.png" width="300px"></image>
+    - Quiz Area: <br> <image src="assets/readme-files/wireframe-quiz-desktop.png" width="600px"></image> <br> <image src="assets/readme-files/wireframe-quiz-mobile.png" width="300px"></image>
+    - Results Area: <br> <image src="assets/readme-files/wireframe-results-desktop.png" width="600px"></image> <br> <image src="assets/readme-files/wireframe-results-mobile.png" width="300px"></image>
 
 ## Features
 ### General
@@ -123,6 +123,7 @@ The completed project can be viewed here: https://orlagh-sweeney.github.io/f1-qu
 ### Frameworks, Libraries and Programmes
 - [Balsamiq](https://balsamiq.com/): this was used to create wireframes in the planning stage of the project. 
 - [Favicon](https://favicon.io/): this was used to generate a favicon for the website. 
+- [Font Awesome](https://fontawesome.com/): this was used to add social media icons to footer to enhance user experience. 
 - [Fontpair](https://www.fontpair.co/): this was used to find fonts that compliment each other. 
 - [Google Fonts](https://fonts.google.com/): this was used to import fonts into the style.css file.
 - [Coolers](https://coolors.co/): this was used to create a colour pallete for the website. 
@@ -158,7 +159,7 @@ The following validators were used to test the code:
 The validators were used throughout the development stage of the website as part of ongoing testing of HTML, CSS and Javascript, and at the end of the project to complete a final code check. Examples of errors and warnings can be found below which were all resolved:
 - Example 1: HTML Validator gave errors and warnings for dupliacte id names and missing space between atributes. <br> <image src="assets/readme-files/validator-html.png" width="600px"></image>
 - Example 2: JSHint gave warnings for missing semicolons. <br> <image src="assets/readme-files/validator-jshint-1.png" width="600px"></image>
-- Example 3: JSHint gave a syntax warning for an if else statement. <br> <image src="assets/readme-files/validator-jshint-1.png" width="600px"></image>
+- Example 3: JSHint gave a syntax warning for an if else statement. <br> <image src="assets/readme-files/validator-jshint-2.png" width="600px"></image>
 
 ### Accessibility
 The following tool was used to check accessibility of the website:
