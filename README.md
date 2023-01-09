@@ -1,6 +1,6 @@
 # The Formula 1 Quiz
 
-<image src="assets/readme-files/f1quiz-readme-image.png" height="600px">
+<image src="assets/readme-files/f1quiz-readme-image.png" width="700px">
 
 The Formula 1 Quiz is a novelty quiz created for F1 fans around the globe. The quiz has two levels of diffculty based on quiz type. '2022 Wrapped' is an easy level testing the user knowledge of the latest F1 season. 'Driver Trivia' is the hard level quiz which tests the users knowledge of F1 drivers outside of the race track. 
 
@@ -61,7 +61,7 @@ The completed project can be viewed here: https://orlagh-sweeney.github.io/f1-qu
 
 ### Colour Scheme
 - The colour scheme closely follows the colours of the Formula 1 brand including red, white, dark grey and a green yellow colour.<br>
-<image src="assets/readme-files/f1quiz-palette.png" height="600px">
+<image src="assets/readme-files/f1quiz-palette.png" width="600px">
 
 ### Typography 
 - Teko was used for the logo and headings with sans-serif as the fallback font.
