@@ -63,9 +63,9 @@ The completed project can be viewed here: https://orlagh-sweeney.github.io/f1-qu
 
 ### Wireframes
 - [Balsamiq](https://balsamiq) was used to develop wireframes for mobile and desktop in the planning stage of the website. 
-    - Introduction Area:
-    - Quiz Area:
-    - Results Area: 
+    - Introduction Area: <br> <image src="assets/readme-files/wireframe-intro-desktop.png" height="500px"></image> <image src="assets/readme-files/wireframe-intro-mobile.png" height="500px"></image>
+    - Quiz Area: <br> <image src="assets/readme-files/wireframe-quiz-desktop.png" height="500px"></image> <image src="assets/readme-files/wireframe-quiz-mobile.png" height="500px"></image>
+    - Results Area: <br> <image src="assets/readme-files/wireframe-results-desktop.png" height="500px"></image> <image src="assets/readme-files/wireframe-results-mobile.png" height="500px"></image>
 
 ## Features
 ### General
@@ -147,6 +147,9 @@ The following validators were used to test the code:
 - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/): No errors were reported when passing the final CSS code through the validator. <br>
 - [JSHint](https://jshint.com/): <br>
 The validators were used throughout the development stage of the website as part of ongoing testing of html and css, and at the end of the project to complete a final code check. Examples of errors and warnings can be found below which were all resolved:
+- Example 1: HTML Validator gave errors and warnings for dupliacte id names and missing space between atributes. <br> <image src="assets/readme-files/validator-html.png" width="600px"></image>
+- Example 2: JSHint gave warnings for missing semicolons. <br> <image src="assets/readme-files/validator-jshint-1.png" width="600px"></image>
+- Example 3: JSHint gave a syntax warning in an if else statement. <br> <image src="assets/readme-files/validator-jshint-1.png" width="600px"></image>
 
 ### Accessibility
 The following tool was used to check accessibility of the website:
