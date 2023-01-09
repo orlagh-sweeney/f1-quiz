@@ -157,10 +157,8 @@ The validators were used throughout the development stage of the website as part
 ### Accessibility
 The following tool was used to check accessibility of the website:
 - [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/): was used to check the accessibility score of each site page and to see if there were issues. 
-- Lighthouse Reports:
-    - Introduction Area<br> <image src="" width="600px"></image>
-    - Quiz Area <br> <image src="" width="600px"></image>
-    - Results Area <br> <image src="" width="600px"></image>
+- Lighthouse Reports:<br>
+    - <image src="" width="700px"></image>
 
 ### Tools Testing
 The following tools were used to test the website:
