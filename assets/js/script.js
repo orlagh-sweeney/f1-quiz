@@ -154,8 +154,6 @@ function checkAnswer() {
         nextBtn.disabled = false;
     }
 
-    
-
 }
 
 /**
