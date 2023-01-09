@@ -1,5 +1,7 @@
 # The Formula 1 Quiz
 
+<image src="assets/readme-files/f1quiz-readme-image.png" height="600px">
+
 The Formula 1 Quiz is a novelty quiz created for F1 fans around the globe. The quiz has two levels of diffculty based on quiz type. '2022 Wrapped' is an easy level testing the user knowledge of the latest F1 season. 'Driver Trivia' is the hard level quiz which tests the users knowledge of F1 drivers outside of the race track. 
 
 The quiz uses F1 terminology in a playful way to mimic the race track environment, it uses term 'time penalty' in place of incorrect answers and the term 'lap time' to record how quick the user completes the quiz. For a wrong question answered, the user receives a 10 second time penalty which is added onto their laptime.  
@@ -7,6 +9,7 @@ The quiz uses F1 terminology in a playful way to mimic the race track environmen
 This quiz was built as my Portfolio 2 project following completion of the Code Institute Javascript module. The quiz uses CSS, HTML and Javascript. 
 
 The completed project can be viewed here: https://orlagh-sweeney.github.io/f1-quiz/
+
 
 ## Table of Contents
 1. [User Experience](#user-experience-ux)
@@ -182,8 +185,8 @@ The website was tested on the following browsers with no issues:
 - Microsoft Edge
 
 ### Feature Testing
-The following features were manually tested on:
-- Clicking on '2022 Wrapped' or 'Driver Trivia' buttons will bring the user the quiz page and load the correct questions.
+The following features were manually tested:
+- Clicking on '2022 Wrapped' or 'Driver Trivia' buttons will bring the user to the quiz page and load the correct questions.
 - Clicking on the 'quit' button will bring the user back to the initial quiz page and reset the quiz. 
 - The laptime clock starts once the relevant quiz is loaded.
 - When an answer option is clicked the text changes to red. If another answer is clicked, the first answer goes back to grey and the new answer is highlighted in red.
@@ -205,7 +208,7 @@ The following features were manually tested on:
 ## Deployment
 The website was developed in Gitpod. It was then commited and pushed to GitHub. 
 The finished site was then deployed to GitHub pages using the following steps: 
-1. Open GitHub and click on the We Ride Cycling Club repository. 
+1. Open GitHub and click on the f1-quiz repository. 
 2. Once inside the repository, locate and click on the Settings tab. 
 3. On the left handside, under the 'Code and automation' section, click on Pages. 
 4. In the Branch section, locate the dropdown menu and change it from None to Main. 
@@ -221,7 +224,7 @@ Answers to question were fact checked using the following websites:
 
 ### Media
 - The backround image was taken from [Pixabay](https://pixabay.com/):
-    - The backgroudn image is [car-racing-1404041_1920](https://pixabay.com/photos/car-racing-barcelona-formula-1-1404041/) by schuger.
+    - The background image is [car-racing-1404041_1920](https://pixabay.com/photos/car-racing-barcelona-formula-1-1404041/) by schuger.
 - The favicon icon was created using [Favicon](https://favicon.io/).
 
 ### Code
