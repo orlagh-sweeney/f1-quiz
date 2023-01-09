@@ -154,7 +154,7 @@ The completed project can be viewed here: https://orlagh-sweeney.github.io/f1-qu
 The following validators were used to test the code:
 - [W3C Markup Validator](https://validator.w3.org/): No errors were reported when passing the final HTML code through the validator. 
 - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/): No errors were reported when passing the final CSS code through the validator. <br>
-- [JSHint](https://jshint.com/): <br>
+- [JSHint](https://jshint.com/): No errors were reported when passing the final javascript code through the validator. <br>
 The validators were used throughout the development stage of the website as part of ongoing testing of HTML, CSS and Javascript, and at the end of the project to complete a final code check. Examples of errors and warnings can be found below which were all resolved:
 - Example 1: HTML Validator gave errors and warnings for dupliacte id names and missing space between atributes. <br> <image src="assets/readme-files/validator-html.png" width="600px"></image>
 - Example 2: JSHint gave warnings for missing semicolons. <br> <image src="assets/readme-files/validator-jshint-1.png" width="600px"></image>
@@ -186,15 +186,24 @@ The website was tested on the following browsers with no issues:
 
 ### Feature Testing
 The following features were manually tested:
-- Clicking on '2022 Wrapped' or 'Driver Trivia' buttons will bring the user to the quiz page and load the correct questions.
-- Clicking on the 'quit' button will bring the user back to the initial quiz page and reset the quiz. 
-- The laptime clock starts once the relevant quiz is loaded.
-- When an answer option is clicked the text changes to red. If another answer is clicked, the first answer goes back to grey and the new answer is highlighted in red.
-- When the 'submit' button is clicked the answer is checked. If the answer is correct the 'Score' is increased, if the answer is incorrect the 'Time Penalty' is increased.
-- If the answer is incorrect, 10 seconds are automatically added onto the 'Lap Time'. 
-- When the 'next' button is clicked the next question of the quiz loads. 
-- When the last question of the quiz is answered the user is brought to the results page. 
-- Once the last question is answered, all scoring parameters are reset should the user wish to try the quiz again. 
+
+TEST       | DESIRED RESULT          | PASS/FAIL |
+---------- | ----------------------- | --------- |
+2022 Wrapped Button | When clicked, the quiz loads quiz A questions and answers for the user | PASS 
+Driver Trivia Button | When clicked, the quiz loads quiz B questions and answers for the user | PASS 
+Quit Button | When clicked, the user will be brought back to the initial quiz page and the quiz will reset  | PASS 
+Lap Time feature | The clock starts when the quiz loads | PASS 
+Option Hover Effect | When a user hovers over an answer it changes to red, when they move the mouse away, it goes back to grey | PASS 
+Option Click Effect | When an answer option is clicked the text changes to red. If another answer is clicked, the first answer goes back to grey and the new answer is highlighted in red. | PASS 
+Submit Button | When clicked the answer is checked. If the answer is correct the 'Score' is increased, if the answer is incorrect the 'Time Penalty' is increased. | PASS 
+No Answer Selected | If the user clicks submit without selecting an answer they are thrown a warning | PASS
+Time Penalty Feature | If the user selects the wrong answer, 10 seconds are automatically added onto the 'Lap Time'. | PASS 
+Next Button | When the 'next' button is clicked the next question of the quiz loads. | PASS
+Last Question Feature | When the last question of the quiz is answered the user is brought to the results page. | PASS
+End of Quiz Reset | Once the last question is answered, all scoring parameters are reset should the user wish to try the quiz again. | PASS 
+Footer Links | When a social media icon in the footer is clicked the website opens in a new browser tab | PASS
+Responsiveness | Responsive Design Checker was used to check responsiveness across mobile, tablet, desktop and laptop | PASS
+Accessibility | Accessibility was tested using Lighthouse in Chrome Developer Tools | PASS 
 
 ### Bugs
 - The submit button was able to be clicked more than once, this meant that if the user double clicked the button their score would increment by two. To fix this issue, I used the disable property on the submit button. Now, when the user clicks 'submit' the submit button is disabled, then when the user clicks on 'next' the submit button is enabled once again for the next question. 
