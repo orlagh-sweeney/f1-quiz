@@ -211,6 +211,21 @@ button:hover {
 
 /* Media Queries */
 
+/* For xxlarge screen from 1600px wide and up */
+@media screen and (min-width: 1600px) { 
+
+/* style h1 heading for min-width 1600px */
+   
+#logo {
+   height: 30vh;
+}
+   
+h1 {
+   font-size: 500%;
+}
+   
+}
+
 /* For xxlarge screen from 1920px wide and up */
 @media screen and (min-width: 1920px) { 
 
@@ -218,10 +233,6 @@ button:hover {
 
 .container {
    width: 55vw;
-}
-
-#logo {
-   height: 30vh;
 }
 
 h1 {
@@ -245,7 +256,7 @@ button {
 }
 
 /* For larger to medium screens size from 1200px wide and down */
- @media screen and (max-width: 1200px) { 
+@media screen and (max-width: 1200px) { 
 
 /* style paragraph for max-width 1200px */
 
@@ -257,8 +268,8 @@ p {
 
 }
 
- /* For medium screens size from 950px wide and down */
- @media screen and (max-width: 950px) {
+/* For medium screens size from 950px wide and down */
+@media screen and (max-width: 950px) {
 
 /* style paragraph and list items for max-width 950px */
 
@@ -291,12 +302,12 @@ li {
    padding: 0;
 }
 
- }
+}
 
 /* Media Queries */
 
- /* For medium screens size from 600px wide and down */
- @media screen and (max-width: 600px) { 
+/* For medium screens size from 600px wide and down */
+@media screen and (max-width: 600px) { 
 
 /* style logo, h1, p, li and buttons for max-width 600px */
 
@@ -332,8 +343,8 @@ button {
 
 }
 
- /* For small screens size from 320px wide and down */
- @media screen and (max-width: 320px) {
+/* For small screens size from 320px wide and down */
+@media screen and (max-width: 320px) {
 
 /* style h1, h2, p, li and buttons for max-width 320px */
 
