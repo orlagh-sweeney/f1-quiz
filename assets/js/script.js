@@ -118,6 +118,7 @@ function clickClass() {
 
     document.getElementById('activated').classList.add('clicked');
     document.getElementById('activated').classList.remove('not-clicked');
+    
 }
 
 
@@ -156,6 +157,11 @@ function checkAnswer() {
 
 }
 
+/**
+ * This function runs when the user clicks the submit button without selecting an answer
+ * It shows an alert to the user
+ * This code was taken from W3SChools
+ */
 function callModal() {
 
     var modal = document.getElementById('myModal');
@@ -164,13 +170,14 @@ function callModal() {
 
     modalSpan.onclick = function() {
         modal.style.display = "none";
-    }
+    };
 
     window.onclick = function(event) {
         if (event.target == modal) {
           modal.style.display = "none";
         }
-}
+    };
+
 }
 
 /**
