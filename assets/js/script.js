@@ -118,7 +118,7 @@ function clickClass() {
 
     document.getElementById('activated').classList.add('clicked');
     document.getElementById('activated').classList.remove('not-clicked');
-    
+
 }
 
 
@@ -235,6 +235,7 @@ function nextQuestion() {
         userWrong.innerText = "0";
         timerReset();
         timerPause();
+        removeClickClass();
     }
 
     submitBtn.disabled = false;
