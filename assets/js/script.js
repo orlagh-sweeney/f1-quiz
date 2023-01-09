@@ -115,7 +115,10 @@ function clickClass() {
         document.getElementById('optionB').classList.remove('click-class');
     }
 
+        document.getElementById('activated').classList.add('clicked');
+        document.getElementById('activated').classList.remove('not-clicked');
 }
+
 
 /**
  * This function removes the click class when a different option is selected by the user
@@ -127,6 +130,8 @@ function removeClickClass () {
     document.getElementById('optionB').classList.remove('click-class');
     document.getElementById('optionC').classList.remove('click-class');
 
+    document.getElementById('activated').classList.add('not-clicked');
+
 }
 
 /**
@@ -136,14 +141,20 @@ function removeClickClass () {
  */
 function checkAnswer() {
 
-    if (activeQuiz == 'A') {
+    if (document.getElementById('activated').classList.contains('not-clicked')) {
+        alert(`Message from race engineer: You must select an answer before clicking submit!!`)
+        console.log('no answer selected');
+    } else if (activeQuiz == 'A') {
         checkQuizAAnswers();
+        submitBtn.disabled = true;
+        nextBtn.disabled = false;
     } else {
         checkQuizBAnswers();
+        submitBtn.disabled = true;
+        nextBtn.disabled = false;
     }
 
-    submitBtn.disabled = true;
-    nextBtn.disabled = false;
+    
 
 }
 
