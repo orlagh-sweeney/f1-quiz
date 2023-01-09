@@ -91,6 +91,7 @@ function runQuiz(quizType) {
  * This function logs the user answer to the console 
  */
 function userAnswer(answer) {
+    
     console.log(answer);
 
 }
@@ -115,8 +116,8 @@ function clickClass() {
         document.getElementById('optionB').classList.remove('click-class');
     }
 
-        document.getElementById('activated').classList.add('clicked');
-        document.getElementById('activated').classList.remove('not-clicked');
+    document.getElementById('activated').classList.add('clicked');
+    document.getElementById('activated').classList.remove('not-clicked');
 }
 
 
@@ -142,7 +143,7 @@ function removeClickClass () {
 function checkAnswer() {
 
     if (document.getElementById('activated').classList.contains('not-clicked')) {
-        alert(`Message from race engineer: You must select an answer before clicking submit!!`)
+        alert(`Message from race engineer: You must select an answer before clicking submit!!`);
         console.log('no answer selected');
     } else if (activeQuiz == 'A') {
         checkQuizAAnswers();
@@ -168,7 +169,7 @@ function checkQuizAAnswers() {
         console.log('incorrect');
         incrementTimePenalty();
         addSeconds();
-        }
+    }
 
 }
 
@@ -184,7 +185,7 @@ function checkQuizBAnswers() {
         console.log('incorrect');
         incrementTimePenalty();
         addSeconds();
-        }
+    }
 
 }
 
@@ -250,6 +251,7 @@ function incrementTimePenalty() {
     
     let oldScore = parseInt(document.getElementById("incorrect").innerText);
     document.getElementById("incorrect").innerText = ++oldScore;
+
 }
 
 /**
@@ -289,8 +291,10 @@ function incrementTimer() {
         seconds = 0;
         minutes++;
     }
+
     userTimerMinutes.innerText = returnData(minutes);
     userTimerSeconds.innerText = returnData(seconds);
+
 }
 
 /**
@@ -299,8 +303,10 @@ function incrementTimer() {
  * Solution from Max Lemiuex's reponse to a stackoverflow query
  */
 function addSeconds() {
+
     seconds = seconds +10;
     userTimerSeconds.innerHTML = seconds;
+
 }
 
 /**
@@ -311,6 +317,7 @@ function addSeconds() {
 function returnData(input) {
 
     return input > 9 ? input : `0${input}`;
+
 }
 
 /**
@@ -319,6 +326,7 @@ function returnData(input) {
  * Modified to suit this proeject
  */
 function timerReset() {
+
     millisecond = 0;
     minutes = 0;
     seconds = 0;
@@ -333,7 +341,9 @@ function timerReset() {
  * Modified to suit this proeject
  */
 function timerPause() {
+    
     clearInterval(cron);
+
 }
 
 /**
