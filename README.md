@@ -1,8 +1,10 @@
 # The Formula 1 Quiz
 
-The Formula 1 Quiz is a novelty quiz created for F1 fans around the globe. The quiz has two levels of diffculty based on quiz type. '2022 Wrapped' is an easy level testing the user knowledge of the latest F1 season. 'Driver Trivia' is the hard level quiz which tests the users knowledge of F1 drivers outside of the race track. The quiz uses F1 terminology in the socoring system to mimic the race track environment, the quiz uses term 'time penalty' in place of incorrect answers and the term 'lap time' to record how quick the user completes the quiz. For a wrong question answered, the user receives a 10 second time penalty added onto the laptime.  
+The Formula 1 Quiz is a novelty quiz created for F1 fans around the globe. The quiz has two levels of diffculty based on quiz type. '2022 Wrapped' is an easy level testing the user knowledge of the latest F1 season. 'Driver Trivia' is the hard level quiz which tests the users knowledge of F1 drivers outside of the race track. 
 
-This quiz was built as my Portfolio 2 project following completion of the Code Institute Javascript module. The quiz uses CSS, HTMl and Javascript. 
+The quiz uses F1 terminology in a playful way to mimic the race track environment, it uses term 'time penalty' in place of incorrect answers and the term 'lap time' to record how quick the user completes the quiz. For a wrong question answered, the user receives a 10 second time penalty which is added onto their laptime.  
+
+This quiz was built as my Portfolio 2 project following completion of the Code Institute Javascript module. The quiz uses CSS, HTML and Javascript. 
 
 The completed project can be viewed here: https://orlagh-sweeney.github.io/f1-quiz/
 
@@ -42,20 +44,21 @@ The completed project can be viewed here: https://orlagh-sweeney.github.io/f1-qu
 ## User Experience (UX)
 
 ### Project Goals
-- To buld a fun quiz for Formala 1 fans incorporating the F1 theme and terminology. 
+- To buld a fun quiz for Formula 1 fans incorporating the F1 theme and terminology. 
 - To clearly outline how the quiz works for the user.
 - To provide a score tracking system for the user.
-- To create a quiz with two levels of difficult with a series of multiple choice questions. 
+- To create a quiz with two levels of difficultly with a series of multiple choice questions. 
 
 ### User Stories
 - As a user, I want to be able to understand how to play the game.
 - As a user, I want to be able to choose a level of difficulty.
 - As a user, I want to be able to keep track of my progress during the quiz.
-- As a user, I want to be able to quiz the game.
-- As a user, I want to be able to play agagin.
+- As a user, I want to be able to quit the game.
+- As a user, I want to be able to play again.
 
 ### Colour Scheme
-- The colour scheme closely follows the colours of the Formula 1 brand including red, white, dark grey and a green yellow colour.
+- The colour scheme closely follows the colours of the Formula 1 brand including red, white, dark grey and a green yellow colour.<br>
+<image src="assets/readme-files/f1quiz-palette.png" height="600px">
 
 ### Typography 
 - Teko was used for the logo and headings with sans-serif as the fallback font.
@@ -72,47 +75,47 @@ The completed project can be viewed here: https://orlagh-sweeney.github.io/f1-qu
 - The website incorporates a responsive design so it can be used across multiple device sizes. 
 - The website uses a consistent colour scheme across the site. 
 - The website has a background image of a F1 racing car inline with the theme. 
-- All buttons on the website have a hover effect to give feedback to the user. 
+- All buttons on the website have a hover effect to give feedback to the user on their purpose. 
 - Each page has a repsonsive footer with social media links. Social media links open in a new browser window.<br>
 <image src="assets/readme-files/f1quiz-footer.png" width="700px"></image>
 
 ### Introduction Area
-- This area contains two parts, a 'how to play' area and a 'choose your quiz' area.
-- The how to play area details the rules of the quiz for the user including how to select and submit an answer, and how to move onto the next question.
+- This area contains two parts, a 'How to play' area and a 'Choose your quiz' area.
+- The 'How to play' area details the rules of the quiz for the user including how to select and submit an answer, and how to move onto the next question.
 - It also informs the user of the time penalty function in relation to their laptime.
-- The choose your quiz area lets the user know which quiz game is easy and which quiz game is hard.
+- The 'Choose your quiz' area lets the user know which quiz game is easy and which quiz game is hard.
 - By clicking on the buttons the appropriate quiz will load for the user.<br>
 <image src="assets/readme-files/f1quiz-intro.png" width="700px"></image>
 
 ### Quiz Area
-- The quiz area in the main quiz game section of the website.
+- The quiz area in the main game section of the website.
 - This div loads the quiz name, questions and answers based on the button the user clicked in the introduction area. 
 - The timer starts when the quiz loads.
 - When the user hovers over an answer the text colour changes to red, when they leave an answer it goes back to grey. 
-- When the user clicks an answer the text colour changes permantly to red so they know it has been selected. 
-- When they user clicks submit the answer will be assessed and either the Score or Time Penalty will be incremented. 
-- If the wrong answer was submitted 10 seconds will be automatically added onto the Lap Time.
-- When the user clicks next the next question will be loaded. 
-- This section contain a quit button if the user wants to end the game. This button will bring the user back to the start of the website.<br>
+- When the user clicks an answer the text colour changes permanently to red so the user knows it has been selected. 
+- When the user clicks 'submit' the answer will be assessed and either 'Score' or 'Time Penalties' will be incremented. 
+- If the wrong answer was submitted, 10 seconds will be automatically added onto the 'Lap Time'.
+- When the user clicks 'next' the next question will be loaded. 
+- This area also contains a 'quit' button if the user wants to end the game. This button will bring the user back to the start of the website.<br>
 <image src="assets/readme-files/f1quiz-quiz.png" width="700px"></image>
 
 ### Results Area
 - This area contains the final result of the quiz.
 - It displays Score, Time Penalties and Laptime. 
 - This section also invites the user the play again and has buttons to select which quiz.
-- This section contain a quit button which brings the user back to the start of the website.<br>
+- This section contains a quit button which brings the user back to the start of the website.<br>
 <image src="assets/readme-files/f1quiz-results.png" width="700px"></image>
 
 ### Future Features
-- A future feature includes a leaderboard section where the user can save their score and compare to other players.
-- Other quiz types can be added such a Formula 1 history theme to add another level of difficulty. 
+- A leaderboard section where the user can save their score and compare their score to other players.
+- Other quiz types can be added such as a Formula 1 history theme to add another level of difficulty. 
 
 ## Technologies Used
 
 ### Languages
 - HTML
 - CSS
-- Javscript
+- Javascript
 
 ### Frameworks, Libraries and Programmes
 - [Balsamiq](https://balsamiq.com/): this was used to create wireframes in the planning stage of the project. 
@@ -120,7 +123,7 @@ The completed project can be viewed here: https://orlagh-sweeney.github.io/f1-qu
 - [Fontpair](https://www.fontpair.co/): this was used to find fonts that compliment each other. 
 - [Google Fonts](https://fonts.google.com/): this was used to import fonts into the style.css file.
 - [Coolers](https://coolors.co/): this was used to create a colour pallete for the website. 
-- [Pixabay](https://pixabay.com/): this was used to find the background images for the project. 
+- [Pixabay](https://pixabay.com/): this was used to find the background image for the project. 
 - [Gitpod](https://www.gitpod.io/): this was used to write, commit and to push the code to Github. 
 - [Github](https://github.com/): this was used to host and deploy the finished project. 
 - [Chrome DevTools](https://developer.chrome.com/docs/devtools/): this was used throughout the project to check responsiveness and debug. 
@@ -134,25 +137,25 @@ The completed project can be viewed here: https://orlagh-sweeney.github.io/f1-qu
 
 ### Testing User Stories
 - As a user, I want to be able to understand how to play the game.
-    - The first area of the quiz explains how to answer and submit questions and the expains the scoring system. 
+    - The first area of the quiz explains how to answer and submit questions and also explains the scoring system. 
 - As a user, I want to be able to choose a level of difficulty.
-    - The quiz allows me to choose to two levels of difficulty.
+    - The quiz allows me to choose from two levels of difficulty.
 - As a user, I want to be able to keep track of my progress during the quiz.
     - The quiz has a live score section so I can keep track of my answer success and time. 
 - As a user, I want to be able to quit the game.
      - The quiz has a quit button so I can end the game.
 - As a user, I want to be able to play again.
-    - On the results page the quiz has options to play the quiz again or try the second quiz. 
+    - On the results page the quiz has options to play the quiz again or try the alternative quiz. 
 
 ### Code Validation
 The following validators were used to test the code:
 - [W3C Markup Validator](https://validator.w3.org/): No errors were reported when passing the final HTML code through the validator. 
 - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/): No errors were reported when passing the final CSS code through the validator. <br>
 - [JSHint](https://jshint.com/): <br>
-The validators were used throughout the development stage of the website as part of ongoing testing of html and css, and at the end of the project to complete a final code check. Examples of errors and warnings can be found below which were all resolved:
+The validators were used throughout the development stage of the website as part of ongoing testing of HTML, CSS and Javascript, and at the end of the project to complete a final code check. Examples of errors and warnings can be found below which were all resolved:
 - Example 1: HTML Validator gave errors and warnings for dupliacte id names and missing space between atributes. <br> <image src="assets/readme-files/validator-html.png" width="600px"></image>
 - Example 2: JSHint gave warnings for missing semicolons. <br> <image src="assets/readme-files/validator-jshint-1.png" width="600px"></image>
-- Example 3: JSHint gave a syntax warning in an if else statement. <br> <image src="assets/readme-files/validator-jshint-1.png" width="600px"></image>
+- Example 3: JSHint gave a syntax warning for an if else statement. <br> <image src="assets/readme-files/validator-jshint-1.png" width="600px"></image>
 
 ### Accessibility
 The following tool was used to check accessibility of the website:
