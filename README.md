@@ -4,7 +4,7 @@
 
 The Formula 1 Quiz is a novelty quiz created for F1 fans around the globe. The quiz has two levels of diffculty based on quiz type. '2022 Wrapped' is an easy level testing the user knowledge of the latest F1 season. 'Driver Trivia' is the hard level quiz which tests the users knowledge of F1 drivers outside of the race track. 
 
-The quiz uses F1 terminology in a playful way to mimic the race track environment, it uses term 'time penalty' in place of incorrect answers and the term 'lap time' to record how quick the user completes the quiz. For a wrong question answered, the user receives a 10 second time penalty which is added onto their laptime.  
+The quiz uses F1 terminology in a playful way to mimic the race track environment, it uses term 'time penalty' in place of incorrect answers and the term 'lap time' to record how quick the user completes the quiz. For each wrong answer, the user receives a 10 second time penalty which is added onto their laptime.  
 
 This quiz was built as my Portfolio 2 project following completion of the Code Institute Javascript module. The quiz uses CSS, HTML and Javascript. 
 
@@ -224,11 +224,11 @@ Accessibility | Accessibility was tested using Lighthouse in Chrome Developer To
 5. Submitting without selecting an answer:
 - A user was able to click submit without selecting an answer which automatically logged an incorrect answer. To fix this, I used the classList property with the add() and remove() methods to check for the 'not-clicked' class. Now the user will receive an alert if they have not selected an answer before clicking the submit button. 
 6. Time Penalty:
-- A big was found when a Time Penalty was received between seconds 51 and 59 inclusive. For example, if a user answered a question wrong at 54 seconds, their laptime was increased to 64 seconds rather than 01:04. To fix this, an if statement has been added to check if seconds are  greater than 50, if this is true, then the minutes are increased by 1 and seconds are increased by the remainder. 
+- A bug was found when a Time Penalty was received between seconds 51 and 59 inclusive. For example, if a user answered a question wrong at 54 seconds, their laptime was increased to 64 seconds rather than 01:04. To fix this, an if statement has been added to check if seconds are  greater than 50, if this is true, then the minutes are increased by 1 and seconds are increased by the remainder. 
 
 ### Unresolved Bugs
 1. Next Button Mobile Devices:
-- On mobile devices, after clicking 'next', the hover effect placed on buttons causes this button to remain red when the next question loads. To try fix this I tested added a style change to the next button so when the user clicks next the color was reset to grey, however this inturn caused the hover effect to stop working for the next question.  
+- On mobile devices, after clicking 'next', the hover effect placed on buttons causes this button to remain red when the next question loads. To try fix this I tested adding a style change to the next button so when the user clicks 'next' the color is reset to grey, however this inturn caused the hover effect to stop working for the next question.  
 
 ## Finished Product
 - The live link to the completed product can be found here: https://orlagh-sweeney.github.io/f1-quiz/
