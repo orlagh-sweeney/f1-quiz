@@ -212,11 +212,18 @@ Responsiveness | Responsive Design Checker was used to check responsiveness acro
 Accessibility | Accessibility was tested using Lighthouse in Chrome Developer Tools. | PASS 
 
 ### Bugs
+1. Submit Button: 
 - The submit button was able to be clicked more than once, this meant that if the user double clicked the button their score would increment by two. To fix this issue, I used the disable property on the submit button. Now, when the user clicks 'submit' the submit button is disabled, then when the user clicks on 'next' the submit button is enabled once again for the next question. 
+2. Lap Time Glitch:
 - The Lap Time timer had a glitch when the seconds were increasing from 09 to 10. A zero was appearing infront of the number 10 (Ex: 010) causing the score area to momentarily shift to the left which would have been noticeable for the user. I fixed this issue by updating the returnData function from > 10 to > 9. This fixed the bug and improved user experience. 
+3. Div Responsiveness:
 - There was a significant gap at the bottom of the div that holds the quiz on both mobile and tablet devices. To fix this I changed the height of the container div to 'fit-content' so that the design was responsive for these devices.
+4. Favicon Icon:
 - The favicon icon was not working on the deployed site. I changed the file path structure in the head to fix this. 
+5. Submitting without selecting an answer:
 - A user was able to click submit without selecting an answer which automatically logged an incorrect answer. To fix this, I used the classList property with the add() and remove() methods to check for the 'not-clicked' class. Now the user will receive an alert if they have not selected an answer before clicking the submit button. 
+6. Time Penalty:
+- A big was found when a Time Penalty was received between seconds 51 and 59 inclusive. For example, if a user answered a question wrong at 54 seconds, their laptime was increased to 64 seconds rather than 01:04. To fix this, an if statement has been added to check if seconds are  greater than 50, if this is true, then the minutes are increased by 1 and seconds are increased by the remainder. 
 
 ## Finished Product
 - The live link to the completed product can be found here: https://orlagh-sweeney.github.io/f1-quiz/
@@ -255,3 +262,4 @@ Answers to question were fact checked using the following websites:
 ## Acknowledgements
 - Thank you to my mentor Marcel for his feedback and suggestions at each stage of the project.
 - Thank you to Code Institute for providing me with the tools and skills to complete this project. 
+- Thank you to Ger from Tutor Support for helping me with the Time Penalty bug.
