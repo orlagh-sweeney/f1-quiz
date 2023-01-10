@@ -88,15 +88,6 @@ function runQuiz(quizType) {
 }
 
 /**
- * This function logs the user answer to the console 
- */
-function userAnswer(answer) {
-    
-    console.log(answer);
-
-}
-
-/**
  * This function adds the click class to the opption/answer selected
  * by the user which changes the text color to red
  */
