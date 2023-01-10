@@ -96,7 +96,9 @@ The completed project can be viewed here: https://orlagh-sweeney.github.io/f1-qu
 - The timer starts when the quiz loads.
 - When the user hovers over an answer the text colour changes to red, when they leave an answer it goes back to grey. 
 - When the user clicks an answer the text colour changes permanently to red so the user knows it has been selected. 
-- When the user clicks 'submit' the answer will be assessed and either 'Score' or 'Time Penalties' will be incremented. 
+- When the user clicks 'submit' the answer will be assessed and either 'Score' or 'Time Penalties' will be incremented.
+- When the user clicks 'submit' without selecting an answer a modal with an alert will appear. <br>
+<image src="assets/readme-files/f1quiz-modal.png" width="700px"></image>
 - If the wrong answer was submitted, 10 seconds will be automatically added onto the 'Lap Time'.
 - When the user clicks 'next' the next question will be loaded. 
 - This area also contains a 'quit' button if the user wants to end the game. This button will bring the user back to the start of the website.<br>
@@ -157,9 +159,10 @@ The following validators were used to test the code:
 - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/): No errors were reported when passing the final CSS code through the validator. <br>
 - [JSHint](https://jshint.com/): No errors were reported when passing the final javascript code through the validator. <br>
 The validators were used throughout the development stage of the website as part of ongoing testing of HTML, CSS and Javascript, and at the end of the project to complete a final code check. Examples of errors and warnings can be found below which were all resolved:
-- Example 1: HTML Validator gave errors and warnings for dupliacte id names and missing space between atributes. <br> <image src="assets/readme-files/validator-html.png" width="600px"></image>
-- Example 2: JSHint gave warnings for missing semicolons. <br> <image src="assets/readme-files/validator-jshint-1.png" width="600px"></image>
-- Example 3: JSHint gave a syntax warning for an if else statement. <br> <image src="assets/readme-files/validator-jshint-2.png" width="600px"></image>
+- Example 1: HTML Validator gave errors and warnings for duplicate id names and missing space between atributes. <br> <image src="assets/readme-files/validator-html.png" width="600px"></image>
+- Example 2: HTML Validator gave an error for duplicate id attributes on an element. <br> <image src="assets/readme-files/validator-html-2.png" width="600px"></image>
+- Example 3: JSHint gave warnings for missing semicolons. <br> <image src="assets/readme-files/validator-jshint-1.png" width="600px"></image>
+- Example 4: JSHint gave a syntax warning for an if else statement. <br> <image src="assets/readme-files/validator-jshint-2.png" width="600px"></image>
 
 ### Accessibility
 The following tool was used to check accessibility of the website:
@@ -190,21 +193,23 @@ The following features were manually tested:
 
 TEST       | DESIRED RESULT          | PASS/FAIL |
 ---------- | ----------------------- | --------- |
-2022 Wrapped Button | When clicked, the quiz loads quiz A questions and answers for the user | PASS 
-Driver Trivia Button | When clicked, the quiz loads quiz B questions and answers for the user | PASS 
-Quit Button | When clicked, the user will be brought back to the initial quiz page and the quiz will reset  | PASS 
-Lap Time feature | The clock starts when the quiz loads | PASS 
-Option Hover Effect | When a user hovers over an answer it changes to red, when they move the mouse away, it goes back to grey | PASS 
+2022 Wrapped Button | When clicked, the quiz loads quiz A questions and answers for the user. | PASS 
+Driver Trivia Button | When clicked, the quiz loads quiz B questions and answers for the user. | PASS 
+2022 Wrapped Quiz | All 10 questions get displayed and the correct answer is correctly associated. | PASS
+Driver Trivia Quiz | All 10 questions get displayed and the correct answer is correctly associated. | PASS
+Quit Button | When clicked, the user will be brought back to the initial quiz page and the quiz will reset.  | PASS 
+Lap Time feature | The clock starts when the quiz loads. | PASS 
+Option Hover Effect | When a user hovers over an answer it changes to red, when they move the mouse away, it goes back to grey. | PASS 
 Option Click Effect | When an answer option is clicked the text changes to red. If another answer is clicked, the first answer goes back to grey and the new answer is highlighted in red. | PASS 
 Submit Button | When clicked the answer is checked. If the answer is correct the 'Score' is increased, if the answer is incorrect the 'Time Penalty' is increased. | PASS 
-No Answer Selected | If the user clicks submit without selecting an answer they are thrown a warning | PASS
+No Answer Selected | If the user clicks submit without selecting an answer they are thrown a warning via a modal. | PASS
 Time Penalty Feature | If the user selects the wrong answer, 10 seconds are automatically added onto the 'Lap Time'. | PASS 
 Next Button | When the 'next' button is clicked the next question of the quiz loads. | PASS
 Last Question Feature | When the last question of the quiz is answered the user is brought to the results page. | PASS
 End of Quiz Reset | Once the last question is answered, all scoring parameters are reset should the user wish to try the quiz again. | PASS 
-Footer Links | When a social media icon in the footer is clicked the website opens in a new browser tab | PASS
-Responsiveness | Responsive Design Checker was used to check responsiveness across mobile, tablet, desktop and laptop | PASS
-Accessibility | Accessibility was tested using Lighthouse in Chrome Developer Tools | PASS 
+Footer Links | When a social media icon in the footer is clicked the website opens in a new browser tab. | PASS
+Responsiveness | Responsive Design Checker was used to check responsiveness across mobile, tablet, desktop and laptop. | PASS
+Accessibility | Accessibility was tested using Lighthouse in Chrome Developer Tools. | PASS 
 
 ### Bugs
 - The submit button was able to be clicked more than once, this meant that if the user double clicked the button their score would increment by two. To fix this issue, I used the disable property on the submit button. Now, when the user clicks 'submit' the submit button is disabled, then when the user clicks on 'next' the submit button is enabled once again for the next question. 
