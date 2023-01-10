@@ -305,11 +305,12 @@ function incrementTimer() {
 }
 
 /**
- * This function adds 10 seconds to the timer when 
- * the user answers a question wrong
+ * This function adds 10 seconds to the timer when the user answers a question wrong
  * Solution from Max Lemiuex's reponse to a stackoverflow query
+ * Support from Code Institute Tutor Ger
  */
 function addSeconds() {
+
     if (seconds > 50) {
         minutes++;
         userTimerMinutes.innerHTML = minutes;
@@ -320,6 +321,7 @@ function addSeconds() {
         seconds = seconds +10;
         userTimerSeconds.innerHTML = seconds;
     }
+    
 }
 
 /**
