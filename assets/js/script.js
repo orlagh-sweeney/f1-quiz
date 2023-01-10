@@ -179,10 +179,8 @@ function callModal() {
 function checkQuizAAnswers() {
 
     if (window.selectedAnswer === quizAQuestions[runningQuestion].correctAnswer) {
-        console.log('correct');
         incrementScore();
     } else {
-        console.log('incorrect');
         incrementTimePenalty();
         addSeconds();
     }
@@ -195,10 +193,8 @@ function checkQuizAAnswers() {
 function checkQuizBAnswers() {
 
     if (window.selectedAnswer === quizBQuestions[runningQuestion].correctAnswer) {
-        console.log('correct');
         incrementScore();
     } else {
-        console.log('incorrect');
         incrementTimePenalty();
         addSeconds();
     }
@@ -212,12 +208,10 @@ function checkQuizBAnswers() {
 function nextQuestion() {
 
     if (activeQuiz == 'A' && runningQuestion<quizAQuestions.length-1) {
-        console.log("running quizA");
         runningQuestion++;
         displayQuizA();
         removeClickClass();
     } else if (activeQuiz == 'B' && runningQuestion<quizBQuestions.length-1) {
-        console.log("running quizB");
         runningQuestion++;
         displayQuizB();
         removeClickClass();
@@ -288,7 +282,6 @@ let millisecond = 0;
  */
 function startTimer() {
 
-    console.log('timer function');
     cron = setInterval(() => { incrementTimer(); }, 10);
 
 }
@@ -324,7 +317,6 @@ function addSeconds() {
         minutes++
         userTimerMinutes.innerHTML
         seconds = seconds % 10;
-        console.log(seconds)
         userTimerSeconds.innerHTML = seconds
     }
     else {
