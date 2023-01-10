@@ -88,8 +88,10 @@ function runQuiz(quizType) {
 }
 
 /**
- * This function adds the click class to the opption/answer selected
- * by the user which changes the text color to red
+ * This function adds the 'click-class' to the answer selected
+ * by the user which changes the text color to red.
+ * It also removes the click class when a different answer is selected by the user
+ * to return the text colour to grey
  */
 function clickClass() {
 
@@ -113,8 +115,9 @@ function clickClass() {
 }
 
 /**
- * This function removes the click class when a different option is selected by the user
- * The text colour is returned to grey
+ * This function removes the click-class when the next button is clicked 
+ * It also adds the 'not-clicked' class to the ul element to be used when checking 
+ * if an answer has been selected by a user
  */
 function removeClickClass () {
 
