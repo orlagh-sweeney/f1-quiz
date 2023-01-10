@@ -1,8 +1,5 @@
-const runQuizA = document.getElementsByClassName('btn-quiz-1');
-const runQuizB = document.getElementsByClassName('btn-quiz-2');
 const submitBtn = document.getElementById('submit');
 const nextBtn = document.getElementById('next');
-const quitBtn = document.getElementsByClassName('btn-quit');
 const quizName = document.getElementById('quiz-name');
 const questionText = document.getElementById('question');
 const optionA = document.getElementById('optionA');
@@ -314,10 +311,10 @@ function incrementTimer() {
  */
 function addSeconds() {
     if (seconds > 50) {
-        minutes++
-        userTimerMinutes.innerHTML
+        minutes++;
+        userTimerMinutes.innerHTML = minutes;
         seconds = seconds % 10;
-        userTimerSeconds.innerHTML = seconds
+        userTimerSeconds.innerHTML = seconds;
     }
     else {
         seconds = seconds +10;
