@@ -36,6 +36,7 @@ The completed project can be viewed here: https://orlagh-sweeney.github.io/f1-qu
     - [Browser Testing](#browser-testing)
     - [Feature Testing](#feature-testing)
     - [Bugs](#bugs)
+    - [Unresolved Bugs](#unresolved-bugs)
 5. [Finished Product](#finished-product)
 6. [Deployment](#deployment)
 7. [Credit](#credit)
@@ -225,6 +226,10 @@ Accessibility | Accessibility was tested using Lighthouse in Chrome Developer To
 6. Time Penalty:
 - A big was found when a Time Penalty was received between seconds 51 and 59 inclusive. For example, if a user answered a question wrong at 54 seconds, their laptime was increased to 64 seconds rather than 01:04. To fix this, an if statement has been added to check if seconds are  greater than 50, if this is true, then the minutes are increased by 1 and seconds are increased by the remainder. 
 
+### Unresolved Bugs
+1. Next Button Mobile Devices:
+- On mobile devices, after clicking 'next', the hover effect placed on buttons causes this button to remain red when the next question loads. To try fix this I tested added a style change to the next button so when the user clicks next the color was reset to grey, however this inturn caused the hover effect to stop working for the next question.  
+
 ## Finished Product
 - The live link to the completed product can be found here: https://orlagh-sweeney.github.io/f1-quiz/
 
@@ -246,7 +251,7 @@ Answers to question were fact checked using the following websites:
 - [racingnews365](https://racingnews365.com/f1-2022-drivers-ages-and-dates-of-birth)
 
 ### Media
-- The backround image was taken from [Pixabay](https://pixabay.com/):
+- The background image was taken from [Pixabay](https://pixabay.com/):
     - The background image is [car-racing-1404041_1920](https://pixabay.com/photos/car-racing-barcelona-formula-1-1404041/) by schuger.
 - The favicon icon was created using [Favicon](https://favicon.io/).
 
