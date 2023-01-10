@@ -320,10 +320,17 @@ function incrementTimer() {
  * Solution from Max Lemiuex's reponse to a stackoverflow query
  */
 function addSeconds() {
-
-    seconds = seconds +10;
-    userTimerSeconds.innerHTML = seconds;
-
+    if (seconds > 50) {
+        minutes++
+        userTimerMinutes.innerHTML
+        seconds = seconds % 10;
+        console.log(seconds)
+        userTimerSeconds.innerHTML = seconds
+    }
+    else {
+        seconds = seconds +10;
+        userTimerSeconds.innerHTML = seconds;
+    }
 }
 
 /**
