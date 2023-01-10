@@ -112,7 +112,6 @@ function clickClass() {
 
 }
 
-
 /**
  * This function removes the click class when a different option is selected by the user
  * The text colour is returned to grey
@@ -510,7 +509,6 @@ let quizAQuestions = [
  * Questions and answers for quiz B: Driver Trivia
  * 
  */
-
 let quizBQuestions = [
     {
         questionText: "What Australian wine brand does Daniel Riccardo have a collaboration with?",
